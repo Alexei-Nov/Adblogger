@@ -2,9 +2,12 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import './header.css'
 import { handleTracking } from 'utils/tracking'
+import { usePageContext } from 'vike-react/usePageContext'
 
 export default function Header() {
   const btnState = useSelector(state => state.toolkit.registrationBtn)
+  const pageContext = usePageContext()
+  const isRoundedBtn = pageContext.urlPathname === '/shops'
 
   function toggleMenuClass() {
     document.body.classList.toggle('show-menu')
@@ -107,7 +110,7 @@ export default function Header() {
             href={btnState.link}
             className={
               "header__btn btn btn_small text-18 fw-500 " +
-              (pathname === '/shops' ? 'btn_rounded btn_border' : '')
+              (isRoundedBtn ? 'btn_rounded btn_border' : '')
             }
             onClick={() => {
               handleTracking('registration_header')

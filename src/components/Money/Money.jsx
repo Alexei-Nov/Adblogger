@@ -10,7 +10,7 @@ export default function Money({ block_state }) {
   const pageContext = usePageContext()
   const imgWrapper = useRef()
 
-  const isShops = pageContext.urlPathname === '/shops'
+  const isRoundedBtn = pageContext.urlPathname === '/shops' || '/max-authors'
 
   return (
     <section className={'section money ' + (block_state.has_border == 'false' ? 'money_without-border' : '')}>
@@ -25,7 +25,7 @@ export default function Money({ block_state }) {
             href={block_state.btn_link}
             className={
               "money__btn btn btn_border " +
-              (isShops ? 'btn_rounded text-24' : '')
+              (isRoundedBtn ? 'btn_rounded text-24' : '')
             }
             onClick={() => {
               handleTracking('registration_other')

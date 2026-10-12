@@ -7,10 +7,38 @@
       "block_state": {}
     },
     {
+      "block_slug": "entrance_max_authors",
+      "block_state": {
+        "title": "<span>Зарабатывайте</span> на&nbsp;своём канале в&nbsp;MAX",
+        "video": "",
+        "video_poster": "/img/entrance-max-authors/poster.png",
+        "btn_text": "Начать зарабатывать",
+        "btn_link": "/app",
+        "list": [
+          {
+            "icon": "/img/entrance-max-authors/icon-1.svg",
+            "text": "Простая регистрация"
+          },
+          {
+            "icon": "/img/entrance-max-authors/icon-2.svg",
+            "text": "Заработок на посевах"
+          },
+          {
+            "icon": "/img/entrance-max-authors/icon-3.svg",
+            "text": "Решение о цене за вами"
+          },
+          {
+            "icon": "/img/entrance-max-authors/icon-4.svg",
+            "text": "Маркировка рекламы на нас"
+          }
+        ]
+      }
+    },
+    {
       "block_slug": "money",
       "block_state": {
-        "title": "не стоит откладывать, пора...",
-        "has_border": "true",
+        "title": "не стоит <br/> откладывать, пора...",
+        "has_border": "false",
         "btn_text": "начать зарабатывать",
         "btn_link": "/app"
       }

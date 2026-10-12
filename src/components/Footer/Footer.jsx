@@ -7,12 +7,13 @@ import { usePageContext } from 'vike-react/usePageContext'
 
 export default function Footer() {
   const { footer, registrationBtn } = useData()
-  const { urlPathname } = usePageContext()
+  const pageContext = usePageContext()
+  const isRoundedBtn = pageContext.urlPathname === '/shops'
 
-  const pathname = urlPathname
-  if (pathname === '/shops-chart' || !footer) {
+  if (pageContext.urlPathname === '/shops-chart' || !footer) {
     return null
   }
+
 
   return (
     <footer className='footer'>
@@ -26,7 +27,7 @@ export default function Footer() {
             href={registrationBtn.link}
             className={
               "footer__btn btn btn_small btn_border " +
-              (pathname === '/shops' ? 'btn_rounded' : '')
+              (isRoundedBtn ? 'btn_rounded' : '')
             }
             onClick={() => {
               handleTracking('registration_footer')

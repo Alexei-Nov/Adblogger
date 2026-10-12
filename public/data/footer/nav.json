@@ -1,135 +1,140 @@
 [
-	{
-		"title": "Кейсы",
-		"link": "/top-cases/",
-		"submenu": []
-	},
-	{
-		"title": "Документы для авторов",
-		"link": "",
-		"submenu": [
-			{
-				"text": "Как работать с шопсами?",
-				"link": "https://adblogger.vk.ru/documents/onboarding_authors",
-				"target": "_blank"
-			},
-			{
-				"text": "Пользовательское соглашение",
-				"link": "https://adblogger.vk.ru/documents/terms",
-				"target": "_blank"
-			},
-			{
-				"text": "Политика конфиденциальности",
-				"link": "https://adblogger.vk.ru/documents/privacy",
-				"target": "_blank"
-			},
-			{
-				"text": "Условия “шопс-чарт” 01/08-30/09",
-				"link": "https://adblogger.vk.ru/documents/shops-chart",
-				"target": "_blank"
-			},
-			{
-				"text": "Правила “шопс-чарт” 15/06&#8209;14/07",
-				"link": "https://adblogger.vk.ru/documents/shops-chart-15-06",
-				"target": "_blank"
-			},
-			{
-				"text": "Оферта для авторов",
-				"link": "https://adblogger.vk.ru/documents/offer_creator",
-				"target": "_blank"
-			},
-			{
-				"text": "Дополнительная оферта для авторов",
-				"link": "https://adblogger.vk.ru/documents/offer_creator_products",
-				"target": "_blank"
-			},
-			{
-				"text": "Условия для авторов",
-				"link": "https://adblogger.vk.ru/documents/terms_creator",
-				"target": "_blank"
-			},
-			{
-				"text": "Правила размещения рекламы",
-				"link": "https://adblogger.vk.ru/documents/moderation",
-				"target": "_blank"
-			},
-			{
-				"text": "Правила модерации сообществ",
-				"link": "https://adblogger.vk.ru/documents/groups_moderation",
-				"target": "_blank"
-			},
-			{
-				"text": "Правила применения рекомендательных технологий",
-				"link": "https://adblogger.vk.ru/documents/offer_creator_products_rec_tech",
-				"target": "_blank"
-			}
-		]
-	},
-	{
-		"title": "Полезные материалы",
-		"link": "/blog/",
-		"submenu": ""
-	},
-	{
-		"title": "Документы для рекламодателей",
-		"link": "",
-		"submenu": [
-			{
-				"text": "Пользовательское соглашение",
-				"link": "https://adblogger.vk.ru/documents/terms",
-				"target": "_blank"
-			},
-			{
-				"text": "Политика конфиденциальности",
-				"link": "https://adblogger.vk.ru/documents/privacy",
-				"target": "_blank"
-			},
-			{
-				"text": "Оферта для рекламодателей",
-				"link": "https://adblogger.vk.ru/documents/offer_adv",
-				"target": "_blank"
-			},
-			{
-				"text": "Правила оказания рекламных услуг",
-				"link": "https://adblogger.vk.ru/documents/rules_adv",
-				"target": "_blank"
-			},
-			{
-				"text": "Правила размещения рекламы",
-				"link": "https://adblogger.vk.ru/documents/moderation",
-				"target": "_blank"
-			},
-			{
-				"text": "Правила акции «Приветственный бонус»",
-				"link": "https://adblogger.vk.ru/documents/pravila_welcome_bonus",
-				"target": "_blank"
-			}
-		]
-	},
-	{
-		"title": "Помощь",
-		"link": "",
-		"submenu": [
-			{
-				"text": "FAQ для авторов",
-				"link": "https://vk.ru/@-225265420-faq-po-platforme-vk-adblogger",
-				"target": "_blank"
-			},
-			{
-				"text": "FAQ по шопсам",
-				"link": "https://vk.ru/@adblogger-for-authors-socom",
-				"target": "_blank"
-			},
-			{
-				"text": "FAQ для рекламодателей",
-				"link": "https://adblogger.vk.ru/documents/faq_advertiser",
-				"target": "_blank"
-			},
-			{
-				"text": "Написать в Поддержку",
-				"link": "https://vk.cc/cyEF76",
-				"target": "_blank"
-			}
-		]
-	}
+  {
+    "title": "Кейсы",
+    "link": "/top-cases/",
+    "submenu": []
+  },
+  {
+    "title": "Документы для авторов",
+    "link": "",
+    "submenu": [
+      {
+        "text": "Как работать с шопсами?",
+        "link": "https://adblogger.vk.ru/documents/onboarding_authors",
+        "target": "_blank"
+      },
+      {
+        "text": "Пользовательское соглашение",
+        "link": "https://adblogger.vk.ru/documents/terms",
+        "target": "_blank"
+      },
+      {
+        "text": "Политика конфиденциальности",
+        "link": "https://adblogger.vk.ru/documents/privacy",
+        "target": "_blank"
+      },
+      {
+        "text": "Условия “шопс-чарт” 01/08-30/09",
+        "link": "https://adblogger.vk.ru/documents/shops-chart",
+        "target": "_blank"
+      },
+      {
+        "text": "Правила “шопс-чарт” 15/06&#8209;14/07",
+        "link": "https://adblogger.vk.ru/documents/shops-chart-15-06",
+        "target": "_blank"
+      },
+      {
+        "text": "Оферта для авторов",
+        "link": "https://adblogger.vk.ru/documents/offer_creator",
+        "target": "_blank"
+      },
+      {
+        "text": "Дополнительная оферта для авторов",
+        "link": "https://adblogger.vk.ru/documents/offer_creator_products",
+        "target": "_blank"
+      },
+      {
+        "text": "Условия для авторов",
+        "link": "https://adblogger.vk.ru/documents/terms_creator",
+        "target": "_blank"
+      },
+      {
+        "text": "Правила размещения рекламы",
+        "link": "https://adblogger.vk.ru/documents/moderation",
+        "target": "_blank"
+      },
+      {
+        "text": "Правила модерации сообществ",
+        "link": "https://adblogger.vk.ru/documents/groups_moderation",
+        "target": "_blank"
+      },
+      {
+        "text": "Правила применения рекомендательных технологий",
+        "link": "https://adblogger.vk.ru/documents/offer_creator_products_rec_tech",
+        "target": "_blank"
+      }
+    ]
+  },
+  {
+    "title": "Полезные материалы",
+    "link": "/blog/",
+    "submenu": ""
+  },
+  {
+    "title": "Документы для рекламодателей",
+    "link": "",
+    "submenu": [
+      {
+        "text": "Пользовательское соглашение",
+        "link": "https://adblogger.vk.ru/documents/terms",
+        "target": "_blank"
+      },
+      {
+        "text": "Политика конфиденциальности",
+        "link": "https://adblogger.vk.ru/documents/privacy",
+        "target": "_blank"
+      },
+      {
+        "text": "Оферта для рекламодателей",
+        "link": "https://adblogger.vk.ru/documents/offer_adv",
+        "target": "_blank"
+      },
+      {
+        "text": "Правила оказания рекламных услуг",
+        "link": "https://adblogger.vk.ru/documents/rules_adv",
+        "target": "_blank"
+      },
+      {
+        "text": "Правила размещения рекламы",
+        "link": "https://adblogger.vk.ru/documents/moderation",
+        "target": "_blank"
+      },
+      {
+        "text": "Правила акции «Приветственный бонус»",
+        "link": "https://adblogger.vk.ru/documents/pravila_welcome_bonus",
+        "target": "_blank"
+      }
+    ]
+  },
+  {
+    "title": "Помощь",
+    "link": "",
+    "submenu": [
+      {
+        "text": "FAQ для авторов",
+        "link": "https://vk.ru/@-225265420-faq-po-platforme-vk-adblogger",
+        "target": "_blank"
+      },
+      {
+        "text": "FAQ по шопсам",
+        "link": "https://vk.ru/@adblogger-for-authors-socom",
+        "target": "_blank"
+      },
+      {
+        "text": "FAQ для рекламодателей",
+        "link": "https://adblogger.vk.ru/documents/faq_advertiser",
+        "target": "_blank"
+      },
+      {
+        "text": "Написать в Поддержку",
+        "link": "https://vk.cc/cyEF76",
+        "target": "_blank"
+      }
+    ]
+  },
+  {
+    "title": "МАКС авторам",
+    "link": "/max-authors",
+    "submenu": ""
+  }
 ]
