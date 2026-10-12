@@ -45,6 +45,79 @@
       }
     },
     {
+      "block_slug": "steps_max_authors",
+      "block_state": {
+        "title": "Первые шаги к заработку в MAX",
+        "list": [
+          {
+            "name": "Зарегистрируйтесь как автор",
+            "img": "/img/steps-max-authors/img-1.png"
+          },
+          {
+            "name": "Добавьте свой канал MAX",
+            "img": "/img/steps-max-authors/img-2.png"
+          },
+          {
+            "name": "Введите данные в кабинете выплат",
+            "img": "/img/steps-max-authors/img-3.png"
+          },
+          {
+            "name": "Получайте заявки от рекламодателей",
+            "img": "/img/steps-max-authors/img-4.png"
+          }
+        ],
+        "btn_text": "Начать зарабатывать",
+        "btn_link": "/app"
+      }
+    },
+    {
+      "block_slug": "number_max_authors",
+      "block_state": {
+        "title": "125 000 авторов",
+        "desc": "уже зарабатывают с VK AdBlogger",
+        "authors": [
+          {
+            "img": "/img/number-max-authors/img-1.png"
+          },
+          {
+            "img": "/img/number-max-authors/img-2.png"
+          },
+          {
+            "img": "/img/number-max-authors/img-3.png"
+          },
+          {
+            "img": "/img/number-max-authors/img-4.png"
+          },
+          {
+            "img": "/img/number-max-authors/img-5.png"
+          },
+          {
+            "img": "/img/number-max-authors/img-6.png"
+          },
+          {
+            "img": "/img/number-max-authors/img-7.png"
+          },
+          {
+            "img": "/img/number-max-authors/img-8.png"
+          },
+          {
+            "img": "/img/number-max-authors/img-9.png"
+          },
+          {
+            "img": "/img/number-max-authors/img-10.png"
+          },
+          {
+            "img": "/img/number-max-authors/img-11.png"
+          },
+          {
+            "img": "/img/number-max-authors/img-12.png"
+          }
+        ],
+        "btn_text": "Начать зарабатывать",
+        "btn_link": "/app"
+      }
+    },
+    {
       "block_slug": "money",
       "block_state": {
         "title": "не стоит <br/> откладывать, пора...",

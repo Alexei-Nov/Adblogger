@@ -42,6 +42,8 @@ import BackpackLink from 'components/BackpackLink/BackpackLink';
 import BlogCatalog from 'components/BlogCatalog/BlogCatalog';
 import EntranceMaxAuthors from 'components/EntranceMaxAuthors/EntranceMaxAuthors';
 import ImageMaxAuthors from 'components/ImageMaxAuthors/ImageMaxAuthors';
+import StepsMaxAuthors from 'components/StepsMaxAuthors/StepsMaxAuthors';
+import NumberMaxAuthors from 'components/NumberMaxAuthors/NumberMaxAuthors';
 
 
 export default function AllBlocks() {
@@ -134,6 +136,10 @@ export default function AllBlocks() {
             return <EntranceMaxAuthors key={i} block_state={block.block_state} />;
           case 'image_max_authors':
             return <ImageMaxAuthors key={i} block_state={block.block_state} />;
+          case 'steps_max_authors':
+            return <StepsMaxAuthors key={i} block_state={block.block_state} />;
+          case 'number_max_authors':
+            return <NumberMaxAuthors key={i} block_state={block.block_state} />;
           default:
             return null;
         }

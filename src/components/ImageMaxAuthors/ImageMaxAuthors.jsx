@@ -7,7 +7,7 @@ export default function ImageMaxAuthors({ block_state }) {
       <div className="container">
         <div className="image-max-authors__title title h2" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
         <picture className="image-max-authors__img">
-          <source media="(max-width: 768px)" srcset={block_state.img_mob} />
+          <source media="(max-width: 768px)" srcSet={block_state.img_mob} />
           <img src={block_state.img} alt="img" />
         </picture>
 
