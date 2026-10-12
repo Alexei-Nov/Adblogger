@@ -1,26 +1,43 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef } from 'react'
 import './entranceMaxAuthors.css'
 import { handleTracking } from 'utils/tracking'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 export default function EntranceMaxAuthors({ block_state }) {
-  // const [windowWidth, setWindowWidth] = useState(
-  //   typeof window !== 'undefined' ? window.innerWidth : 1024
-  // )
 
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     setWindowWidth(window.innerWidth)
-  //   }
+  const wrapper = useRef()
 
-  //   window.addEventListener('resize', handleResize)
+  useEffect(() => {
+    const img = wrapper.current.querySelector('.entrance-max-authors__img img')
 
-  //   return () => {
-  //     window.removeEventListener('resize', handleResize)
-  //   }
-  // }, [])
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: wrapper.current,
+        start: 'top 30%',
+        end: 'bottom top',
+        scrub: false,
+        markers: false,
+        pin: false,
+      }
+    })
+
+    tl.fromTo(img, {
+      scale: 0,
+      opacity: 0,
+    }, {
+      scale: 1,
+      opacity: 1,
+      duration: 1.5,
+      ease: 'power3.out',
+    })
+
+  }, [])
 
   return (
-    <section className='entrance-max-authors section'>
+    <section className='entrance-max-authors section' ref={wrapper}>
       <div className="container">
         <div className="entrance-max-authors__wrapper">
           <div className="entrance-max-authors__body">
@@ -34,8 +51,13 @@ export default function EntranceMaxAuthors({ block_state }) {
             </a>
           </div>
 
-          <div className="entrance-max-authors__video">
-            <video src={block_state.video} poster={block_state.video_poster} autoPlay muted playsInline />
+          <div className="entrance-max-authors__media">
+            <div className="entrance-max-authors__bg">
+              <img src={block_state.img_bg} alt="img" />
+            </div>
+            <div className="entrance-max-authors__img">
+              <img src={block_state.img} alt="img" />
+            </div>
           </div>
         </div>
 

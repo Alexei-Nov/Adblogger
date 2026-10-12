@@ -10,8 +10,8 @@
       "block_slug": "entrance_max_authors",
       "block_state": {
         "title": "<span>Зарабатывайте</span> на&nbsp;своём канале в&nbsp;MAX",
-        "video": "",
-        "video_poster": "/img/entrance-max-authors/poster.png",
+        "img": "/img/entrance-max-authors/img.png",
+        "img_bg": "/img/entrance-max-authors/bg.png",
         "btn_text": "Начать зарабатывать",
         "btn_link": "/app",
         "list": [
