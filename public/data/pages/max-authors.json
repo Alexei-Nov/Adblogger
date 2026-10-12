@@ -35,6 +35,16 @@
       }
     },
     {
+      "block_slug": "image_max_authors",
+      "block_state": {
+        "title": "Какие каналы можно <br/> монетизировать",
+        "img": "/img/image-max-authors/img.png",
+        "img_mob": "/img/image-max-authors/img_mob.png",
+        "btn_text": "Начать зарабатывать",
+        "btn_link": "/app"
+      }
+    },
+    {
       "block_slug": "money",
       "block_state": {
         "title": "не стоит <br/> откладывать, пора...",
