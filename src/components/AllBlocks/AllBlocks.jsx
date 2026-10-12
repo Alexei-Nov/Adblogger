@@ -40,6 +40,7 @@ import ShopsExamples from 'components/ShopsExamples/ShopsExamples';
 import EntranceVideo from 'components/EntranceVideo/EntranceVideo';
 import BackpackLink from 'components/BackpackLink/BackpackLink';
 import BlogCatalog from 'components/BlogCatalog/BlogCatalog';
+import InfoStatus from 'components/InfoStatus/InfoStatus';
 
 
 export default function AllBlocks() {
@@ -128,6 +129,8 @@ export default function AllBlocks() {
             return <BackpackLink key={i} block_state={block.block_state} />;
           case 'blog_catalog':
             return <BlogCatalog key={i} block_state={block.block_state} />;
+          case 'info_status ':
+            return <InfoStatus key={i} block_state={block.block_state} />;
           default:
             return null;
         }
