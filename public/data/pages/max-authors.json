@@ -120,9 +120,9 @@
     {
       "block_slug": "money",
       "block_state": {
-        "title": "не стоит <br/> откладывать, пора...",
+        "title": "Не стоит <br/> откладывать, пора...",
         "has_border": "false",
-        "btn_text": "начать зарабатывать",
+        "btn_text": "Начать зарабатывать",
         "btn_link": "/app"
       }
     },

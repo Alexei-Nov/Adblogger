@@ -51,6 +51,9 @@
   font-size: 60px;
   line-height: 100%;
 }
+.money_without-border .money__btn {
+  padding: 15px 50px;
+}
 
 @media screen and (max-width: 1024px) {
   .money__img > img {

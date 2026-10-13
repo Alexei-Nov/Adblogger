@@ -1,6 +1,7 @@
 .steps-max-authors__btn {
   margin: 0 auto;
   margin-top: 60px;
+  padding: 15px 50px;
 }
 .steps-max-authors__list {
   display: flex;
@@ -48,6 +49,9 @@
   top: 13px;
   left: 13px;
   z-index: 2;
+}
+.steps-max-authors__title {
+  margin-bottom: 60px;
 }
 
 @media screen and (max-width: 1400px) {
