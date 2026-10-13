@@ -4,35 +4,9 @@ import "swiper/css/pagination";
 import './channelsRedesign.css'
 import { Navigation, Pagination, Mousewheel } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { gsap } from 'gsap'
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
 
 export default function ChannelsRedesign({ block_state }) {
   let swiper = useRef();
-  useEffect(() => {
-    if (window.innerWidth > 768) {
-      let tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: swiper.current,
-          start: "bottom bottom",
-          end: "bottom bottom",
-          scrub: false,
-          markers: false,
-          pin: false,
-        }
-      });
-
-      tl.fromTo(gsap.utils.selector(swiper)('.swiper-wrapper'), {
-        xPercent: 50,
-      }, {
-        xPercent: 0,
-        duration: 2.5,
-        ease: "elastic.out(0.8,0.4)",
-      });
-    }
-  }, [])
-
   const [chanellsTag, setChanellsTag] = useState(block_state.tags[0].name)
 
   function filterChannels(tag) {
@@ -58,21 +32,36 @@ export default function ChannelsRedesign({ block_state }) {
             <h2 className="channels-redesign__title title h2" dangerouslySetInnerHTML={{ __html: block_state.title }}></h2>
           }
           <div className="channels-redesign__wrapper">
-            <div className="channels-redesign__tags">
+            <div className="channels-redesign__tags text-20 fw-500">
               {block_state.tags.map((tag, i) => {
                 return (
                   <div
                     key={i}
-                    className={"channels-redesign__tag text-20 fw-500 btn btn_rounded btn_transparent" + (chanellsTag === tag.name ? ' channels__tag_active' : '')}
+                    className={"channels-redesign__tag btn btn_rounded btn_transparent" + (chanellsTag === tag.name ? ' channels-redesign__tag_active' : '')}
                     onClick={() => { filterChannels(tag.name) }}
                   >{tag.name}</div>
                 )
               })}
             </div>
+            <div className="channels-redesign__panel">
+              {block_state.tags.map((tag, i) => {
+                return (
+                  <div key={i} className={"channels-redesign__panel-item" + (chanellsTag === tag.name ? ' channels-redesign__panel-item_active' : '')}>
+                    <div className="channels-redesign__panel-money fw-600 h2">{tag.money}</div>
+                    <div className="channels-redesign__panel-text text-24 fw-500" dangerouslySetInnerHTML={{ __html: block_state.label }}></div>
+                    <picture className="channels-redesign__panel-img">
+                      <source media="(max-width: 1024px)" srcSet={tag.img_bg_mob} />
+                      <img src={tag.img_bg} alt="img" />
+                    </picture>
+                  </div>
+                )
+              })}
+
+            </div>
             <Swiper className='channels-redesign__slider'
               ref={swiper}
               modules={[Navigation, Pagination, Mousewheel]}
-              spaceBetween={24}
+              spaceBetween={5}
               speed={800}
               mousewheel={{
                 enabled: true,
@@ -89,15 +78,15 @@ export default function ChannelsRedesign({ block_state }) {
                 dynamicBullets: true,
               }}
               centeredSlides={true}
-              loop={true}
+              // loop={true}
               loopAdditionalSlides={10}
               breakpoints={{
                 0: {
                   slidesPerView: 1,
                 },
                 570: {
-                  slidesPerView: 'auto'
-                },
+                  slidesPerView: 'auto',
+                }
               }}
             >
 
@@ -105,38 +94,64 @@ export default function ChannelsRedesign({ block_state }) {
                 return (
                   <SwiperSlide key={i} className='channels-redesign__slide'>
                     <div className="channels-redesign__card">
-                      <div className="channels-redesign__img">
-                        <img src={channel.photoPath} alt="img" />
-                        <div className="channels-redesign__icon">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
-                            <path d="M4.33609 13.8392L5.07712 13.1677L4.33609 13.8392C4.41679 13.9282 4.4623 14.061 4.44491 14.2008L3.93836 18.2738C3.71257 20.0893 5.54097 21.6302 7.30487 20.7566L10.8611 18.9953C10.9502 18.9512 11.0498 18.9512 11.1389 18.9953L14.6951 20.7566C16.459 21.6303 18.2874 20.0893 18.0616 18.2738L17.5551 14.2008L16.5627 14.3242L17.5551 14.2008C17.5377 14.061 17.5832 13.9282 17.6639 13.8392L20.3683 10.8547C21.5954 9.50044 20.9532 7.19977 19.0817 6.83411L15.2125 6.07811C15.1203 6.06011 15.024 5.99623 14.964 5.88156L13.0792 2.27573C12.1901 0.574753 9.80986 0.57476 8.92075 2.27573L7.03596 5.88156C6.97602 5.99622 6.87967 6.06011 6.78755 6.07811L2.91826 6.83411C1.04676 7.19977 0.404559 9.50044 1.63167 10.8547L4.33609 13.8392ZM14.8298 9.76088L14.8296 9.76111L14.8298 9.76088Z"
-                              fill="white" stroke="black" strokeWidth="2" />
-                          </svg>
+                      <div className="channels-redesign__card-top">
+                        <div className="channels-redesign__card-col">
+                          <div className="channels-redesign__subscribers">
+                            <div className="channels-redesign__subscribers-logo">
+                              <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 13.8705C0 7.33188 0 4.06257 2.03129 2.03129C4.06257 0 7.33188 0 13.8705 0H15.0264C21.565 0 24.8343 0 26.8656 2.03129C28.8968 4.06257 28.8968 7.33188 28.8968 13.8705V15.0264C28.8968 21.565 28.8968 24.8343 26.8656 26.8656C24.8343 28.8968 21.565 28.8968 15.0264 28.8968H13.8705C7.33188 28.8968 4.06257 28.8968 2.03129 26.8656C0 24.8343 0 21.565 0 15.0264V13.8705Z" fill="#0077FF" />
+                                <path d="M15.3755 20.8171C8.78942 20.8171 5.03287 16.302 4.87634 8.78882H8.17539C8.28375 14.3033 10.7159 16.6391 12.6423 17.1207V8.78882H15.7488V13.5447C17.6512 13.34 19.6497 11.1728 20.3239 8.78882H23.4304C22.9127 11.7267 20.7454 13.8939 19.2042 14.7849C20.7454 15.5073 23.2138 17.3977 24.153 20.8171H20.7334C19.9989 18.5295 18.1689 16.7595 15.7488 16.5187V20.8171H15.3755Z" fill="white" />
+                              </svg>
+                            </div>
+                            <div className="channels-redesign__subscribers-text text-20">{channel.subscribers}</div>
+                          </div>
+                          <div className="channels-redesign__name h3" dangerouslySetInnerHTML={{ __html: channel.name }}></div>
+                        </div>
+                        <div className="channels-redesign__img">
+                          <img src={channel.photoPath} alt="img" />
                         </div>
                       </div>
-                      <div className="channels-redesign__name h3" dangerouslySetInnerHTML={{ __html: channel.name }}></div>
-                      <div className="channels-redesign__desc" dangerouslySetInnerHTML={{ __html: channel.desc }}></div>
-                      <div className="channels-redesign__bottom">{channel.subscribers}</div>
+                      <div className="channels-redesign__desc text-28" dangerouslySetInnerHTML={{ __html: channel.desc }}></div>
                     </div>
                   </SwiperSlide>
                 )
               }))}
 
-              <div className="channels-redesign__pagination slider-pagination swiper-pagination"></div>
               <div className="channels-redesign__navigation slider-navigation">
-                <div className="channels-redesign__prev slider-prev">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path fillRule="evenodd" clipRule="evenodd" d="M14.7365 17.7364C15.088 17.3849 15.088 16.8151 14.7365 16.4636L10.2729 12L14.7365 7.53639C15.088 7.18492 15.088 6.61507 14.7365 6.2636C14.385 5.91213 13.8152 5.91213 13.4637 6.26361L8.3637 11.3636C8.01223 11.7151 8.01223 12.285 8.3637 12.6364L13.4637 17.7364C13.8152 18.0879 14.385 18.0879 14.7365 17.7364Z" fill="#7C8A9A" />
+                <div className="channels-redesign__prev channels-redesign__navigation-btn slider-prev">
+                  <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="48.2755" y="48.2755" width="48.2755" height="48.2755" rx="24.1377" transform="rotate(-180 48.2755 48.2755)" fill="url(#paint0_linear_11085_57665)" />
+                    <path fillRule="evenodd" clipRule="evenodd" d="M28.0613 33.6404C28.6437 33.0922 28.6715 32.1756 28.1233 31.5932L20.7817 23.7927L28.1233 15.9923C28.6715 15.4098 28.6437 14.4933 28.0613 13.9451C27.4788 13.3969 26.5622 13.4246 26.014 14.0071L17.7382 22.8001C17.2134 23.3578 17.2134 24.2277 17.7382 24.7853L26.014 33.5784C26.5622 34.1608 27.4788 34.1886 28.0613 33.6404Z" fill="black" />
+                    <defs>
+                      <linearGradient id="paint0_linear_11085_57665" x1="72.4133" y1="48.2755" x2="72.4133" y2="96.551" gradientUnits="userSpaceOnUse">
+                        <stop stopColor="#CDFBFF" />
+                        <stop offset="1" stopColor="#00EAFF" />
+                      </linearGradient>
+                    </defs>
                   </svg>
                 </div>
-                <div className="channels-redesign__next slider-next">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <path fillRule="evenodd" clipRule="evenodd" d="M9.2635 6.26361C8.91203 6.61508 8.91203 7.18493 9.26351 7.5364L13.7271 12L9.2635 16.4636C8.91203 16.8151 8.91203 17.3849 9.26351 17.7364C9.61498 18.0879 10.1848 18.0879 10.5363 17.7364L15.6363 12.6364C15.9878 12.2849 15.9878 11.715 15.6363 11.3636L10.5363 6.2636C10.1848 5.91213 9.61498 5.91213 9.2635 6.26361Z" fill="#7C8A9A" />
+                <div className="channels-redesign__next channels-redesign__navigation-btn slider-next">
+                  <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="48.2755" height="48.2755" rx="24.1377" transform="matrix(1 0 0 -1 0 48.2755)" fill="url(#paint0_linear_11085_57662)" />
+                    <path fillRule="evenodd" clipRule="evenodd" d="M20.2143 33.6404C19.6318 33.0922 19.604 32.1756 20.1522 31.5932L27.4938 23.7927L20.1522 15.9923C19.604 15.4098 19.6318 14.4933 20.2143 13.9451C20.7967 13.3969 21.7133 13.4246 22.2615 14.0071L30.5373 22.8001C31.0621 23.3578 31.0621 24.2277 30.5373 24.7853L22.2615 33.5784C21.7133 34.1608 20.7967 34.1886 20.2143 33.6404Z" fill="black" />
+                    <defs>
+                      <linearGradient id="paint0_linear_11085_57662" x1="24.1377" y1="0" x2="24.1377" y2="48.2755" gradientUnits="userSpaceOnUse">
+                        <stop stopColor="#CDFBFF" />
+                        <stop offset="1" stopColor="#00EAFF" />
+                      </linearGradient>
+                    </defs>
                   </svg>
                 </div>
               </div>
             </Swiper>
           </div>
+          <div className="channels-redesign__bottom">
+            <div className="channels-redesign__bottom-text text-18 fw-500">
+              *в категории на платформе VK AdBlogger
+            </div>
+            <div className="channels-redesign__pagination slider-pagination slider-pagination_gradient swiper-pagination"></div>
+          </div>
+
         </div>
       </section>
     </>

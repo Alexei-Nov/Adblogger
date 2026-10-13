@@ -9,28 +9,38 @@
     {
       "block_slug": "channels_redesign",
       "block_state": {
-        "title": "<span class='tt-lc'>найдите</span> авторов под любые задачи",
+        "title": "Выбирайте авторов под свои задачи",
         "label": "Средний CPM по&nbsp;тематике",
         "tags": [
           {
             "name": "Лайфстайл",
-            "money": "60 ₽"
+            "money": "60 ₽",
+            "img_bg": "/img/channels-redesign/panel-bg-1.png",
+            "img_bg_mob": "/img/channels-redesign/panel-bg-1_mob.png"
           },
           {
             "name": "Юмор",
-            "money": "45 ₽"
+            "money": "45 ₽",
+            "img_bg": "/img/channels-redesign/panel-bg-2.png",
+            "img_bg_mob": "/img/channels-redesign/panel-bg-2_mob.png"
           },
           {
             "name": "Гейминг",
-            "money": "60 ₽"
+            "money": "60 ₽",
+            "img_bg": "/img/channels-redesign/panel-bg-1.png",
+            "img_bg_mob": "/img/channels-redesign/panel-bg-1_mob.png"
           },
           {
             "name": "Путешествия",
-            "money": "60 ₽"
+            "money": "60 ₽",
+            "img_bg": "/img/channels-redesign/panel-bg-1.png",
+            "img_bg_mob": "/img/channels-redesign/panel-bg-1_mob.png"
           },
           {
             "name": "Стиль",
-            "money": "60 ₽"
+            "money": "60 ₽",
+            "img_bg": "/img/channels-redesign/panel-bg-1.png",
+            "img_bg_mob": "/img/channels-redesign/panel-bg-1_mob.png"
           }
         ],
         "channels": [
