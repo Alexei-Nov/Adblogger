@@ -1,5 +1,5 @@
-import ForAdvisers from '../ForAdvertisers';
+import MaxAdvertisers from '../MaxAdvertisers';
 
 export default function Page() {
-  return <ForAdvisers />;
+  return <MaxAdvertisers />;
 }
