@@ -140,7 +140,7 @@
 @media screen and (max-width: 768px) {
   .number-max-authors {
     &__wrapper {
-      padding: 200px 0;
+      padding: 185px 0 200px;
     }
     &__number {
       font-size: 46px;
@@ -150,12 +150,67 @@
       font-size: 20px !important;
       line-height: 100%;
       margin: 0 auto;
-      margin-top: 20px;
+      margin-top: 15px;
       max-width: 290px;
     }
     &__authors {
-      height: 200%;
-      transform: translate(-50%, -50%) scale(0.5);
+      height: 100%;
+      width: 360px;
+      transform: translate(-50%, -50%);
+    }
+    &__img {
+      &:nth-child(1) {
+        top: 0;
+        left: 68px;
+        max-width: 84px;
+      }
+      &:nth-child(2) {
+        top: 82px;
+        left: 5px;
+        max-width: 90px;
+      }
+      &:nth-child(3) {
+        top: 10px;
+        left: 220px;
+        max-width: 147px;
+      }
+      &:nth-child(4) {
+        display: none;
+      }
+      &:nth-child(5) {
+        top: 76px;
+        left: 138px;
+        max-width: 74px;
+      }
+      &:nth-child(6) {
+        display: none;
+      }
+      &:nth-child(7) {
+        display: none;
+      }
+      &:nth-child(8) {
+        top: 320px;
+        left: 0px;
+        max-width: 74px;
+      }
+      &:nth-child(9) {
+        top: 382px;
+        left: 40px;
+        max-width: 135px;
+      }
+      &:nth-child(10) {
+        display: none;
+      }
+      &:nth-child(11) {
+        top: 445px;
+        left: 187px;
+        max-width: 93px;
+      }
+      &:nth-child(12) {
+        top: 340px;
+        left: 240px;
+        max-width: 100px;
+      }
     }
   }
 }
