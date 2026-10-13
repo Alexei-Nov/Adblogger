@@ -78,9 +78,13 @@
     line-height: 100%;
   }
   .money_without-border .money__wrapper {
-    padding: 210px 0px;
+    padding: 150px 0px 210px;
   }
   .money_without-border .money__btn {
     width: 100%;
+    padding: 14px;
+  }
+  .money_without-border .money__img {
+    top: -40px;
   }
 }
