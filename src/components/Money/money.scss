@@ -51,11 +51,13 @@
       &__img {
         & img {
           object-fit: contain;
+          height: 113%;
+          width: 110%;
         }
       }
       &__title {
         font-size: 60px;
-        line-height: 100%;
+        line-height: 120%;
       }
       &__btn {
         padding: 15px 50px;
@@ -104,17 +106,24 @@
       & .money {
         &__title {
           font-size: 28px;
-          line-height: 100%;
+          line-height: 120%;
         }
         &__wrapper {
           padding: 150px 0px 210px;
+          gap: 27px;
         }
         &__btn {
           width: 100%;
-          padding: 14px;
+          padding: 11px;
+          font-size: 16px;
         }
         &__img {
           top: -40px;
+
+          & img {
+            width: 115%;
+            height: 118%;
+          }
         }
       }
     }

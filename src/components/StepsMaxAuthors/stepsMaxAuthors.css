@@ -105,3 +105,11 @@
     margin-top: 24px;
   }
 }
+@media screen and (max-width: 570px) {
+  .steps-max-authors__title {
+    margin-bottom: 25px !important;
+  }
+  .steps-max-authors__btn {
+    width: 100% !important;
+  }
+}

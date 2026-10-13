@@ -31,16 +31,17 @@ export default function NumberMaxAuthors({ block_state }) {
       opacity: 1,
       duration: 1.5,
       ease: 'power3.out',
-    })
+    }, 0)
     tl.fromTo(authors, {
       scale: 0,
       opacity: 0,
     }, {
+      delay: 0.5,
       scale: 1,
       opacity: 1,
       duration: 2,
       ease: 'power3.out',
-    })
+    }, 0)
 
   }, [])
 

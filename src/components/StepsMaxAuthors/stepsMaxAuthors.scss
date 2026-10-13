@@ -112,3 +112,14 @@
     }
   }
 }
+
+@media screen and (max-width: 570px) {
+  .steps-max-authors {
+    &__title {
+      margin-bottom: 25px !important;
+    }
+    &__btn {
+      width: 100% !important;
+    }
+  }
+}

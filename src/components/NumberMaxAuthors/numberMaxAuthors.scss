@@ -20,7 +20,7 @@
   }
   &__desc {
     text-align: center;
-    margin-top: 5px;
+    margin-top: 10px;
   }
   &__body {
     position: relative;
@@ -48,7 +48,7 @@
     height: 100%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0.95);
   }
   &__authors-wrapper {
     width: 100%;
@@ -149,6 +149,9 @@
     &__desc {
       font-size: 20px !important;
       line-height: 100%;
+      margin: 0 auto;
+      margin-top: 20px;
+      max-width: 290px;
     }
     &__authors {
       height: 200%;

@@ -15,7 +15,7 @@ export default function StepsMaxAuthors({ block_state }) {
                 </div>
                 <div className="steps-max-authors__list-body">
                   <div className="steps-max-authors__list-num text-30 fw-500">{index + 1}</div>
-                  <div className="steps-max-authors__list-text text-24 fw-600" dangerouslySetInnerHTML={{ __html: item.name }}></div>
+                  <div className="steps-max-authors__list-text text-24 fw-500" dangerouslySetInnerHTML={{ __html: item.name }}></div>
                 </div>
               </div>
             )

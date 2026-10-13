@@ -46,10 +46,12 @@
 .money_without-border .money__img img {
   -o-object-fit: contain;
      object-fit: contain;
+  height: 113%;
+  width: 110%;
 }
 .money_without-border .money__title {
   font-size: 60px;
-  line-height: 100%;
+  line-height: 120%;
 }
 .money_without-border .money__btn {
   padding: 15px 50px;
@@ -75,16 +77,22 @@
   }
   .money_without-border .money__title {
     font-size: 28px;
-    line-height: 100%;
+    line-height: 120%;
   }
   .money_without-border .money__wrapper {
     padding: 150px 0px 210px;
+    gap: 27px;
   }
   .money_without-border .money__btn {
     width: 100%;
-    padding: 14px;
+    padding: 11px;
+    font-size: 16px;
   }
   .money_without-border .money__img {
     top: -40px;
+  }
+  .money_without-border .money__img img {
+    width: 115%;
+    height: 118%;
   }
 }

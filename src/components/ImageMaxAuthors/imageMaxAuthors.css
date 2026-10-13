@@ -28,3 +28,8 @@
     width: 100% !important;
   }
 }
+@media screen and (max-width: 570px) {
+  .image-max-authors__title {
+    margin-bottom: 25px !important;
+  }
+}

@@ -31,3 +31,10 @@
     }
   }
 }
+@media screen and (max-width: 570px) {
+  .image-max-authors {
+    &__title {
+      margin-bottom: 25px !important;
+    }
+  }
+}
