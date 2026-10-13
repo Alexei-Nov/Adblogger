@@ -129,7 +129,7 @@ export default function AllBlocks() {
             return <BackpackLink key={i} block_state={block.block_state} />;
           case 'blog_catalog':
             return <BlogCatalog key={i} block_state={block.block_state} />;
-          case 'info_status ':
+          case 'info_status':
             return <InfoStatus key={i} block_state={block.block_state} />;
           default:
             return null;
