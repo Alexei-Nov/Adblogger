@@ -1,0 +1,116 @@
+.channels-redesign__slide {
+  width: 312px;
+}
+.channels-redesign__card {
+  width: 100%;
+  min-height: 380px;
+  padding: 32px;
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: all ease 0.5s;
+}
+.channels-redesign__bottom {
+  margin-top: auto;
+  color: var(--grey-1);
+}
+.channels-redesign__img {
+  position: relative;
+  display: flex;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background-color: var(--white);
+}
+.channels-redesign__img img {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.channels-redesign__icon {
+  display: flex;
+  position: absolute;
+  top: -3px;
+  right: 1px;
+}
+.channels-redesign__icon svg path {
+  transition: all ease 0.5s;
+}
+.channels-redesign__slider {
+  width: 100%;
+  overflow: visible;
+}
+.channels-redesign__pagination {
+  margin-top: 72px;
+}
+.channels-redesign__navigation {
+  position: absolute;
+  top: calc(50% - 40px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+.channels-redesign__tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.channels-redesign__tag {
+  border: 1.5px solid transparent;
+  transition: all ease 0.5s;
+}
+.channels-redesign__tag_active {
+  border-color: var(--white);
+}
+.channels-redesign__title {
+  margin-bottom: 60px;
+}
+.channels-redesign .swiper-wrapper {
+  padding: 50px 0;
+}
+
+@media screen and (min-width: 570px) {
+  .channels-redesign__slide {
+    perspective: 500px;
+  }
+  .channels-redesign__slide:hover .channels-redesign__card {
+    background-color: var(--blue-1);
+    color: var(--black);
+    transform: rotateY(-30deg);
+  }
+  .channels-redesign__slide:hover .channels-redesign__icon svg path {
+    stroke: var(--blue-1);
+    fill: var(--black);
+  }
+}
+@media screen and (max-width: 768px) {
+  .channels-redesign__navigation {
+    display: none;
+  }
+}
+@media screen and (max-width: 570px) {
+  .channels-redesign__card {
+    background-color: var(--black-2);
+    border-radius: 20px;
+  }
+  .channels-redesign__title {
+    margin-bottom: 24px;
+  }
+  .channels-redesign__pagination {
+    margin-top: 24px;
+  }
+  .channels-redesign__heading_has-tags {
+    margin-bottom: 0px;
+  }
+  .channels-redesign__heading_has-tags .channels-redesign__title {
+    margin-bottom: 36px;
+  }
+}
