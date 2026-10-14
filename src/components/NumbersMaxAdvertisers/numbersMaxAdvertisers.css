@@ -1,0 +1,39 @@
+.numbers-max-advertisers__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 125px;
+  row-gap: 60px;
+  justify-content: center;
+}
+.numbers-max-advertisers__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+}
+.numbers-max-advertisers__number {
+  font-family: "VK Sans Display Expanded";
+  font-size: 90px;
+  line-height: 110%;
+  vertical-align: bottom;
+  font-weight: 600;
+  background: linear-gradient(94.12deg, #cdfbff 25.52%, #00eaff 108.56%);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+@media screen and (max-width: 570px) {
+  .numbers-max-advertisers__wrapper {
+    gap: 35px;
+  }
+  .numbers-max-advertisers__number {
+    font-size: 55px;
+    line-height: 110%;
+  }
+  .numbers-max-advertisers__text {
+    font-size: 22px !important;
+    line-height: 120%;
+  }
+}

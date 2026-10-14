@@ -465,11 +465,18 @@ body {
       min-width: 17px;
       width: 17px;
       height: 17px;
-      transition: none !important;
+      transition: none;
     }
     & .swiper-pagination-bullet-active {
       background: linear-gradient(140.98deg, #cdfbff 27.92%, #27cdff 126.81%);
       opacity: 1;
+    }
+  }
+
+  &.swiper-pagination-bullets-dynamic {
+    transform: none !important;
+    & .swiper-pagination-bullet {
+      margin: 4px !important;
     }
   }
 }

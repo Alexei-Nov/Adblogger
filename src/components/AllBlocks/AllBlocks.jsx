@@ -42,6 +42,7 @@ import BackpackLink from 'components/BackpackLink/BackpackLink';
 import BlogCatalog from 'components/BlogCatalog/BlogCatalog';
 import CaseRedesign from 'components/CaseRedesign/CaseRedesign';
 import ChannelsRedesign from 'components/ChannelsRedesign/ChannelsRedesign';
+import NumbersMaxAdvertisers from 'components/NumbersMaxAdvertisers/NumbersMaxAdvertisers';
 
 
 export default function AllBlocks() {
@@ -134,6 +135,8 @@ export default function AllBlocks() {
             return <CaseRedesign key={i} block_state={block.block_state} />;
           case 'channels_redesign':
             return <ChannelsRedesign key={i} block_state={block.block_state} />;
+          case 'numbers_max_advertisers':
+            return <NumbersMaxAdvertisers key={i} block_state={block.block_state} />;
           default:
             return null;
         }
