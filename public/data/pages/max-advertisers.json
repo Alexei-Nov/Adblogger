@@ -7,6 +7,14 @@
       "block_state": {}
     },
     {
+      "block_slug": "entrance_max_advertisers",
+      "block_state": {
+        "title": "Нативная реклама",
+        "btn_link": "/app",
+        "btn_text": "Запустить рекламу"
+      }
+    },
+    {
       "block_slug": "formats_max_advertisers",
       "block_state": {
         "title": "2 формата рекламы, чтобы бизнес рос",

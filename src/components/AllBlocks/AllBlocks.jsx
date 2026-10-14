@@ -44,6 +44,7 @@ import CaseRedesign from 'components/CaseRedesign/CaseRedesign';
 import ChannelsRedesign from 'components/ChannelsRedesign/ChannelsRedesign';
 import NumbersMaxAdvertisers from 'components/NumbersMaxAdvertisers/NumbersMaxAdvertisers';
 import FormatsMaxAdvertisers from 'components/FormatsMaxAdvertisers/FormatsMaxAdvertisers';
+import EntranceMaxAdvertisers from 'components/EntranceMaxAdvertisers/EntranceMaxAdvertisers';
 
 
 export default function AllBlocks() {
@@ -140,6 +141,8 @@ export default function AllBlocks() {
             return <NumbersMaxAdvertisers key={i} block_state={block.block_state} />;
           case 'formats_max_advertisers':
             return <FormatsMaxAdvertisers key={i} block_state={block.block_state} />;
+          case 'entrance_max_advertisers':
+            return <EntranceMaxAdvertisers key={i} block_state={block.block_state} />;
           default:
             return null;
         }

@@ -1,6 +1,7 @@
 .formats-max-advertisers__btn {
   margin: 0 auto;
   margin-top: 60px;
+  padding: 15px 50px;
 }
 .formats-max-advertisers__title {
   margin-bottom: 60px;
@@ -87,6 +88,10 @@
   .formats-max-advertisers__btn {
     width: 100%;
     margin-top: 23px;
+    padding: 11px;
+  }
+  .formats-max-advertisers__wrapper {
+    gap: 10px;
   }
   .formats-max-advertisers-card__body {
     padding: 16px;
@@ -116,6 +121,6 @@
   }
   .formats-max-advertisers-card__img {
     width: 100%;
-    max-width: 150px;
+    max-width: 145px;
   }
 }
