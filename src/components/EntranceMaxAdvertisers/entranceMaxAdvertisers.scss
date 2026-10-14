@@ -1,12 +1,18 @@
 .entrance-max-advertisers {
   &__wrapper {
     display: flex;
-    align-items: center;
     justify-content: space-between;
   }
   &__btn {
     padding: 15px 60px !important;
     margin-top: 35px;
+    background-color: #00000066;
+    backdrop-filter: blur(30px);
+  }
+  &__body {
+    padding-top: 85px;
+    width: 100%;
+    max-width: 660px;
   }
   &__title {
     font-family: "VK Sans Display Condensed";
@@ -27,15 +33,19 @@
     }
 
     & span {
+      display: block;
+      width: 100%;
       background: linear-gradient(94.12deg, #cdfbff 25.52%, #00eaff 108.56%);
       color: transparent;
       background-clip: text;
+      opacity: 0;
+      transform: translateY(-100%);
+      transition: all ease 0.5s;
 
       &:nth-child(2) {
         position: absolute;
         top: 0px;
         left: 0px;
-        opacity: 0;
       }
     }
   }
@@ -60,19 +70,19 @@
       max-width: 185px;
       z-index: 3;
       top: 320px;
-      left: -100px;
+      left: -130px;
     }
     &:nth-child(2) {
       max-width: 135px;
       top: -40px;
-      left: 30px;
+      left: 0px;
       animation-delay: 0.6s;
       animation-duration: 4s;
     }
     &:nth-child(3) {
       max-width: 150px;
       top: 230px;
-      right: 20px;
+      right: 0px;
       animation-delay: 0.3s;
       animation-duration: 3.5s;
     }
@@ -88,25 +98,67 @@
     position: relative;
     z-index: 1;
     height: auto;
+    margin-bottom: -80px;
 
     & img {
       width: 100%;
       height: auto;
       object-fit: cover;
       object-position: top;
+      transition: all ease 0.5s;
+
+      &:nth-child(2) {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+      }
     }
 
-    // &::after {
-    //   display: block;
-    //   content: "";
-    //   width: 100%;
-    //   height: 50%;
-    //   position: absolute;
-    //   bottom: 0px;
-    //   left: 0px;
-    //   z-index: 2;
-    //   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 95%);
-    // }
+    &::after {
+      display: block;
+      content: "";
+      width: 100%;
+      height: 30%;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      z-index: 2;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 50%);
+    }
+  }
+
+  &[data-stage="1"] {
+    & .entrance-max-advertisers {
+      &__title-anim {
+        & [data-stage="1"] {
+          transform: none;
+          opacity: 1;
+        }
+        & [data-stage="2"] {
+          animation: titleAnim 0.5s ease-in-out;
+        }
+      }
+    }
+  }
+  &[data-stage="2"] {
+    & .entrance-max-advertisers {
+      &__title-anim {
+        & [data-stage="2"] {
+          transform: none;
+          opacity: 1;
+        }
+        & [data-stage="1"] {
+          animation: titleAnim 0.5s ease-in-out;
+        }
+      }
+    }
+  }
+
+  &[data-stage="1"] img[data-stage="2"] {
+    opacity: 0;
+  }
+  &[data-stage="2"] img[data-stage="1"] {
+    opacity: 0;
   }
 }
 
@@ -117,5 +169,98 @@
   }
   50% {
     transform: translateY(-20px);
+  }
+}
+
+@keyframes titleAnim {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .entrance-max-advertisers {
+    &__wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__media {
+      width: fit-content;
+      margin-top: 40px;
+    }
+    &__body {
+      display: contents;
+    }
+    &__btn {
+      order: 3;
+      z-index: 5;
+      margin-top: -80px;
+      width: 100% !important;
+      max-width: 500px;
+    }
+    &__title {
+      text-align: center;
+    }
+    &__title-anim {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__coin {
+      &:nth-child(1) {
+        top: 420px;
+        left: -90px;
+      }
+      &:nth-child(2) {
+        left: -50px;
+        top: 0;
+      }
+      &:nth-child(3) {
+        top: 300px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .entrance-max-advertisers {
+    &__media {
+      zoom: 0.7;
+      margin-top: 20px;
+    }
+    &__img {
+      width: 112%;
+      margin-left: -24px;
+      margin-right: -24px;
+    }
+    &__title {
+      font-size: 40px;
+      line-height: 100%;
+
+      & svg {
+        height: 14px;
+        width: 33px;
+        margin-bottom: 15px;
+        margin-right: -33px;
+      }
+    }
+    &__btn {
+      margin-top: -50px;
+      padding: 11px;
+    }
+
+    &__coin {
+      &:nth-child(2) {
+        left: -70px;
+        top: -20px;
+      }
+      &:nth-child(3) {
+        top: 300px;
+        right: -20px;
+      }
+    }
   }
 }
