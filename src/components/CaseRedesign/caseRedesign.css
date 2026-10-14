@@ -150,4 +150,15 @@
   .case-redesign__title {
     margin-bottom: 30px;
   }
+  .case-redesign__slide {
+    padding: 30px;
+    height: 340px;
+  }
+  .case-redesign__name {
+    font-size: 20px;
+    line-height: 120%;
+  }
+  .case-redesign__icon {
+    height: 40px;
+  }
 }

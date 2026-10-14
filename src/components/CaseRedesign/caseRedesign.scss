@@ -164,5 +164,16 @@
     &__title {
       margin-bottom: 30px;
     }
+    &__slide {
+      padding: 30px;
+      height: 340px;
+    }
+    &__name {
+      font-size: 20px;
+      line-height: 120%;
+    }
+    &__icon {
+      height: 40px;
+    }
   }
 }
