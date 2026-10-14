@@ -7,6 +7,44 @@
       "block_state": {}
     },
     {
+      "block_slug": "formats_max_advertisers",
+      "block_state": {
+        "title": "2 формата рекламы, чтобы бизнес рос",
+        "btn_link": "/app",
+        "btn_text": "Начать продвижение",
+        "list": [
+          {
+            "name": "Посевы",
+            "desc": "Размещайте готовые креативы на площадках авторов",
+            "label": "Где доступно",
+            "img": "/img/formats-max-advertisers/img-1.png",
+            "socials": [
+              {
+                "icon": "/img/formats-max-advertisers/icon-1.svg",
+                "link": "#link"
+              },
+              {
+                "icon": "/img/formats-max-advertisers/icon-2.svg",
+                "link": "#link"
+              }
+            ]
+          },
+          {
+            "name": "Контент на заказ",
+            "desc": "Заказывайте авторские интеграции по своему брифу",
+            "label": "Где доступно",
+            "img": "/img/formats-max-advertisers/img-2.png",
+            "socials": [
+              {
+                "icon": "/img/formats-max-advertisers/icon-1.svg",
+                "link": "#link"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
       "block_slug": "numbers_max_advertisers",
       "block_state": {
         "list": [

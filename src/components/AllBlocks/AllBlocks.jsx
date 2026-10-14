@@ -43,6 +43,7 @@ import BlogCatalog from 'components/BlogCatalog/BlogCatalog';
 import CaseRedesign from 'components/CaseRedesign/CaseRedesign';
 import ChannelsRedesign from 'components/ChannelsRedesign/ChannelsRedesign';
 import NumbersMaxAdvertisers from 'components/NumbersMaxAdvertisers/NumbersMaxAdvertisers';
+import FormatsMaxAdvertisers from 'components/FormatsMaxAdvertisers/FormatsMaxAdvertisers';
 
 
 export default function AllBlocks() {
@@ -137,6 +138,8 @@ export default function AllBlocks() {
             return <ChannelsRedesign key={i} block_state={block.block_state} />;
           case 'numbers_max_advertisers':
             return <NumbersMaxAdvertisers key={i} block_state={block.block_state} />;
+          case 'formats_max_advertisers':
+            return <FormatsMaxAdvertisers key={i} block_state={block.block_state} />;
           default:
             return null;
         }
