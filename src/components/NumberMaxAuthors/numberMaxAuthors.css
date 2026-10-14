@@ -131,6 +131,12 @@
   top: 590px;
   left: 1010px;
 }
+.number-max-authors__img:nth-child(13) {
+  display: none;
+}
+.number-max-authors__img:nth-child(14) {
+  display: none;
+}
 
 @media screen and (max-width: 768px) {
   .number-max-authors__wrapper {
@@ -158,6 +164,10 @@
     max-width: 84px;
   }
   .number-max-authors__img:nth-child(2) {
+    display: none;
+  }
+  .number-max-authors__img:nth-child(13) {
+    display: block;
     top: 82px;
     left: 5px;
     max-width: 90px;
@@ -182,6 +192,10 @@
     display: none;
   }
   .number-max-authors__img:nth-child(8) {
+    display: none;
+  }
+  .number-max-authors__img:nth-child(14) {
+    display: block;
     top: 320px;
     left: 0px;
     max-width: 74px;

@@ -134,6 +134,12 @@
       top: 590px;
       left: 1010px;
     }
+    &:nth-child(13) {
+      display: none;
+    }
+    &:nth-child(14) {
+      display: none;
+    }
   }
 }
 
@@ -165,6 +171,10 @@
         max-width: 84px;
       }
       &:nth-child(2) {
+        display: none;
+      }
+      &:nth-child(13) {
+        display: block;
         top: 82px;
         left: 5px;
         max-width: 90px;
@@ -189,6 +199,10 @@
         display: none;
       }
       &:nth-child(8) {
+        display: none;
+      }
+      &:nth-child(14) {
+        display: block;
         top: 320px;
         left: 0px;
         max-width: 74px;

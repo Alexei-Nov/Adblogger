@@ -47,7 +47,7 @@
     {
       "block_slug": "steps_max_authors",
       "block_state": {
-        "title": "Первые шаги к заработку в MAX",
+        "title": "Сделайте первые шаги к заработку",
         "list": [
           {
             "name": "Зарегистрируйтесь как автор",
@@ -111,6 +111,12 @@
           },
           {
             "img": "/img/number-max-authors/img-12.png"
+          },
+          {
+            "img": "/img/number-max-authors/img-13.png"
+          },
+          {
+            "img": "/img/number-max-authors/img-14.png"
           }
         ],
         "btn_text": "Начать зарабатывать",
