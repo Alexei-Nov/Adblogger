@@ -112,17 +112,17 @@
 		"submenu": [
 			{
 				"text": "FAQ для авторов",
-				"link": "https://vk.ru/@-225265420-faq-po-platforme-vk-adblogger",
+				"link": "https://faq.vk.ru/vk_adblogger/vk_adblogger_dlya_avtorov",
 				"target": "_blank"
 			},
 			{
 				"text": "FAQ по шопсам",
-				"link": "https://vk.ru/@adblogger-for-authors-socom",
+				"link": "https://faq.vk.ru/vk_adblogger/vk_adblogger_dlya_avtorov",
 				"target": "_blank"
 			},
 			{
 				"text": "FAQ для рекламодателей",
-				"link": "https://adblogger.vk.ru/documents/faq_advertiser",
+				"link": "https://faq.vk.ru/vk_adblogger/vk_adblogger_dlya_reklamodatelei",
 				"target": "_blank"
 			}
 		]
