@@ -55,6 +55,461 @@
       }
     },
     {
+      "block_slug": "channels_redesign",
+      "block_state": {
+        "title": "Выбирайте авторов под свои задачи",
+        "label": "Средний CPM по&nbsp;тематике",
+        "tags": [
+          {
+            "name": "Лайфстайл",
+            "money": "60 ₽",
+            "img_bg": "/img/channels-redesign/panel-bg-1.png",
+            "img_bg_mob": "/img/channels-redesign/panel-bg-1_mob.png"
+          },
+          {
+            "name": "Юмор",
+            "money": "45 ₽",
+            "img_bg": "/img/channels-redesign/panel-bg-2.png",
+            "img_bg_mob": "/img/channels-redesign/panel-bg-2_mob.png"
+          },
+          {
+            "name": "Гейминг",
+            "money": "60 ₽",
+            "img_bg": "/img/channels-redesign/panel-bg-1.png",
+            "img_bg_mob": "/img/channels-redesign/panel-bg-1_mob.png"
+          },
+          {
+            "name": "Путешествия",
+            "money": "60 ₽",
+            "img_bg": "/img/channels-redesign/panel-bg-1.png",
+            "img_bg_mob": "/img/channels-redesign/panel-bg-1_mob.png"
+          },
+          {
+            "name": "Стиль",
+            "money": "60 ₽",
+            "img_bg": "/img/channels-redesign/panel-bg-1.png",
+            "img_bg_mob": "/img/channels-redesign/panel-bg-1_mob.png"
+          }
+        ],
+        "channels": [
+          {
+            "name": "RAVILOVA",
+            "photoPath": "/img/channels/lifestyle-1.png",
+            "desc": "Блогер и артистка Катя Равилова",
+            "subscribers": "188K подписчиков",
+            "tags": [
+              "Лайфстайл"
+            ]
+          },
+          {
+            "name": "Настя Рыжик",
+            "photoPath": "/img/channels/lifestyle-2.png",
+            "desc": "Хитрая лиса, блогер и артистка",
+            "subscribers": "349K подписчиков",
+            "tags": [
+              "Лайфстайл"
+            ]
+          },
+          {
+            "name": "Люба Бич",
+            "photoPath": "/img/channels/lifestyle-3.png",
+            "desc": "Лайфстайл",
+            "subscribers": "263К подписчиков",
+            "tags": [
+              "Лайфстайл"
+            ]
+          },
+          {
+            "name": "vasha.milasha | ISKRA",
+            "photoPath": "/img/channels/lifestyle-4.png",
+            "desc": "Жизненные видео от блогера Миланы Гасымовой",
+            "subscribers": "186K подписчиков",
+            "tags": [
+              "Лайфстайл"
+            ]
+          },
+          {
+            "name": "TWIXI",
+            "photoPath": "/img/channels/lifestyle-5.png",
+            "desc": "Про блогинг и юмор от близняшек",
+            "subscribers": "230K подписчиков",
+            "tags": [
+              "Лайфстайл"
+            ]
+          },
+          {
+            "name": "Дина Мирная",
+            "photoPath": "/img/channels/lifestyle-6.png",
+            "desc": "Королева лайфхаков",
+            "subscribers": "69K подписчиков",
+            "tags": [
+              "Лайфстайл"
+            ]
+          },
+          {
+            "name": "Штепс",
+            "photoPath": "/img/channels/lifestyle-7.png",
+            "desc": "Про семью, про музыку и про кино",
+            "subscribers": "54K подписчиков",
+            "tags": [
+              "Лайфстайл"
+            ]
+          },
+          {
+            "name": "POLI | Полина Дубкова",
+            "photoPath": "/img/channels/lifestyle-8.png",
+            "desc": "Поёт, шикарно танцует и ведёт блог",
+            "subscribers": "157K подписчиков",
+            "tags": [
+              "Лайфстайл"
+            ]
+          },
+          {
+            "name": "Аня Абрамова",
+            "photoPath": "/img/channels/lifestyle-9.png",
+            "desc": "О семье, материнстве и полезных покупках",
+            "subscribers": "178K подписчиков",
+            "tags": [
+              "Лайфстайл"
+            ]
+          },
+          {
+            "name": "Tobolator",
+            "photoPath": "/img/channels/lifestyle-10.png",
+            "desc": "Папа-блогер",
+            "subscribers": "313K подписчиков",
+            "tags": [
+              "Лайфстайл"
+            ]
+          },
+          {
+            "name": "МХК",
+            "photoPath": "/img/channels/humor-1.png",
+            "desc": "Тот самый паблик с мемами",
+            "subscribers": "5.6M подписчиков",
+            "tags": [
+              "Юмор"
+            ]
+          },
+          {
+            "name": "Шпильки | Женский Журнал",
+            "photoPath": "/img/channels/humor-2.png",
+            "desc": "И мейк-ап советы, и стиль, и юмор",
+            "subscribers": "3.9M подписчиков",
+            "tags": [
+              "Юмор"
+            ]
+          },
+          {
+            "name": "БОРЩ",
+            "photoPath": "/img/channels/humor-3.png",
+            "desc": "Здесь смеются над актуальным",
+            "subscribers": "4.7M подписчиков",
+            "tags": [
+              "Юмор"
+            ]
+          },
+          {
+            "name": "Мозги трески",
+            "photoPath": "/img/channels/humor-4.png",
+            "desc": "Мини-комиксы про твою жизнь",
+            "subscribers": "137K подписчиков",
+            "tags": [
+              "Юмор"
+            ]
+          },
+          {
+            "name": "мемы про работу",
+            "photoPath": "/img/channels/humor-5.png",
+            "desc": "Смеёмся работе в лицо",
+            "subscribers": "319К подписчиков",
+            "tags": [
+              "Юмор"
+            ]
+          },
+          {
+            "name": "котямбусы",
+            "photoPath": "/img/channels/humor-6.png",
+            "desc": "Обязательный паблик с котами",
+            "subscribers": "129K подписчиков",
+            "tags": [
+              "Юмор"
+            ]
+          },
+          {
+            "name": "Мудрый волк | Нейронный клык | Ауф цитаты",
+            "photoPath": "/img/channels/humor-7.png",
+            "desc": "Цитаты на все случаи жизни",
+            "subscribers": "110K подписчиков",
+            "tags": [
+              "Юмор"
+            ]
+          },
+          {
+            "name": "Да, Но / Yes, But",
+            "photoPath": "/img/channels/humor-8.png",
+            "desc": "Те самые комиксы «Да, Но»",
+            "subscribers": "175K подписчиков",
+            "tags": [
+              "Юмор"
+            ]
+          },
+          {
+            "name": "еда не еда",
+            "photoPath": "/img/channels/humor-9.png",
+            "desc": "Бытовые зарисовки на языке еды",
+            "subscribers": "444K подписчиков",
+            "tags": [
+              "Юмор"
+            ]
+          },
+          {
+            "name": "Эшкрек фром Кряков | Escape from Tarkov",
+            "photoPath": "/img/channels/gaming-1.png",
+            "desc": "Игровые мемы",
+            "subscribers": "44K подписчиков",
+            "tags": [
+              "Гейминг"
+            ]
+          },
+          {
+            "name": "Всё о Minecraft",
+            "photoPath": "/img/channels/gaming-2.png",
+            "desc": "Карты, моды, текстуры и всё-всё в Minecraft",
+            "subscribers": "82K подписчиков",
+            "tags": [
+              "Гейминг"
+            ]
+          },
+          {
+            "name": "Tavern | Dota",
+            "photoPath": "/img/channels/gaming-3.png",
+            "desc": "Коммьюнити игроков Dota",
+            "subscribers": "49K подписчиков",
+            "tags": [
+              "Гейминг"
+            ]
+          },
+          {
+            "name": "Новости GTA Online и GTA 6",
+            "photoPath": "/img/channels/gaming-4.png",
+            "desc": "Cообщество для игроков в GTA",
+            "subscribers": "32K подписчиков",
+            "tags": [
+              "Гейминг"
+            ]
+          },
+          {
+            "name": "ЧЕЛОВЕК-САМОВАР | DOTA 2",
+            "photoPath": "/img/channels/gaming-5.png",
+            "desc": "Новости и мемы по Dota 2",
+            "subscribers": "90K подписчиков",
+            "tags": [
+              "Гейминг"
+            ]
+          },
+          {
+            "name": "Gaming за 30",
+            "photoPath": "/img/channels/gaming-6.png",
+            "desc": "Геймер с хорошим стажем",
+            "subscribers": "47K подписчиков",
+            "tags": [
+              "Гейминг"
+            ]
+          },
+          {
+            "name": "Tavern | Tarkov",
+            "photoPath": "/img/channels/gaming-7.png",
+            "desc": "Ищем тиммейтов и общаемся",
+            "subscribers": "38K подписчиков",
+            "tags": [
+              "Гейминг"
+            ]
+          },
+          {
+            "name": "МАЙНКРАФТ | Роменский",
+            "photoPath": "/img/channels/gaming-8.png",
+            "desc": "Группа настоящего майнкрафтера",
+            "subscribers": "64K подписчиков",
+            "tags": [
+              "Гейминг"
+            ]
+          },
+          {
+            "name": "FC25 | Карьера | Перспективные футболисты",
+            "photoPath": "/img/channels/gaming-9.png",
+            "desc": "Настоящие фанаты FC25",
+            "subscribers": "94K подписчиков",
+            "tags": [
+              "Гейминг"
+            ]
+          },
+          {
+            "name": "Traveler - Путешествия и туризм",
+            "photoPath": "/img/channels/travel-1.png",
+            "desc": "Вокруг света за пару постов",
+            "subscribers": "2.4M подписчиков",
+            "tags": [
+              "Путешествия"
+            ]
+          },
+          {
+            "name": "Россия | Путешествия, фото, Крым, туризм",
+            "photoPath": "/img/channels/travel-2.png",
+            "desc": "Еду по России, вижу красоту",
+            "subscribers": "277K подписчиков",
+            "tags": [
+              "Путешествия"
+            ]
+          },
+          {
+            "name": "Александр Михайленко",
+            "photoPath": "/img/channels/travel-3.png",
+            "desc": "Самое красивое с Крымского полуострова",
+            "subscribers": "273К подписчиков",
+            "tags": [
+              "Путешествия"
+            ]
+          },
+          {
+            "name": "Traveler's blog",
+            "photoPath": "/img/channels/travel-4.png",
+            "desc": "Контент со всего света",
+            "subscribers": "818K подписчиков",
+            "tags": [
+              "Путешествия"
+            ]
+          },
+          {
+            "name": "В поисках света | Александр Мазуров",
+            "photoPath": "/img/channels/travel-5.png",
+            "desc": "Фотограф-путешественник в поисках света",
+            "subscribers": "103K подписчиков",
+            "tags": [
+              "Путешествия"
+            ]
+          },
+          {
+            "name": "Романтика русских деревень",
+            "photoPath": "/img/channels/travel-6.png",
+            "desc": "О жизни русской глубинки",
+            "subscribers": "419K подписчиков",
+            "tags": [
+              "Путешествия"
+            ]
+          },
+          {
+            "name": "Дотошный турист",
+            "photoPath": "/img/channels/travel-7.png",
+            "desc": "Чек-лист для новичков по Питеру",
+            "subscribers": "111K подписчиков",
+            "tags": [
+              "Путешествия"
+            ]
+          },
+          {
+            "name": "Путешествия без багажа",
+            "photoPath": "/img/channels/travel-8.png",
+            "desc": "Были везде и расскажут об этом всё",
+            "subscribers": "185K подписчиков",
+            "tags": [
+              "Путешествия"
+            ]
+          },
+          {
+            "name": "Раздетый стилист Лена Червова",
+            "photoPath": "/img/channels/style-1.png",
+            "desc": "Меняет жизни силой стиля",
+            "subscribers": "533K подписчиков",
+            "tags": [
+              "Стиль"
+            ]
+          },
+          {
+            "name": "Стилист Оксана Самарина",
+            "photoPath": "/img/channels/style-2.png",
+            "desc": "Вдохновляет на модные эксперименты",
+            "subscribers": "41K подписчиков",
+            "tags": [
+              "Стиль"
+            ]
+          },
+          {
+            "name": "Яркий Nail блогер - Alena Lavrenteva",
+            "photoPath": "/img/channels/style-3.png",
+            "desc": "Настоящий эксперт в ногтевом сервисе",
+            "subscribers": "166K подписчиков",
+            "tags": [
+              "Стиль"
+            ]
+          },
+          {
+            "name": "Стиль с Катей Гершуни",
+            "photoPath": "/img/channels/style-4.png",
+            "desc": "Бодипозитивный стилист",
+            "subscribers": "130K подписчиков",
+            "tags": [
+              "Стиль"
+            ]
+          },
+          {
+            "name": "Ok. Love",
+            "photoPath": "/img/channels/style-5.png",
+            "desc": "Место, где глаза отдыхают",
+            "subscribers": "100K подписчиков",
+            "tags": [
+              "Стиль"
+            ]
+          },
+          {
+            "name": "Алла Смирнова",
+            "photoPath": "/img/channels/style-6.png",
+            "desc": "Художник по гриму, визажист и гораздо больше",
+            "subscribers": "51K подписчиков",
+            "tags": [
+              "Стиль"
+            ]
+          },
+          {
+            "name": "Советы по стилю, тренды, мода",
+            "photoPath": "/img/channels/style-7.png",
+            "desc": "Фэшн-эскизы и советы по стилю",
+            "subscribers": "254K подписчиков",
+            "tags": [
+              "Стиль"
+            ]
+          },
+          {
+            "name": "Разговоры с Ириной Муромцевой",
+            "photoPath": "/img/channels/style-8.png",
+            "desc": "Про здоровье, красоту и саморазвитие",
+            "subscribers": "170K подписчиков",
+            "tags": [
+              "Стиль"
+            ]
+          },
+          {
+            "name": "Академия Леди",
+            "photoPath": "/img/channels/style-9.png",
+            "desc": "Медиа о благородном воспитании девушек",
+            "subscribers": "313K подписчиков",
+            "tags": [
+              "Стиль"
+            ]
+          },
+          {
+            "name": "Tina Bukreeva",
+            "photoPath": "/img/channels/style-10.png",
+            "desc": "Бьюти-лайфхаки от профи мейк-апа",
+            "subscribers": "54K подписчиков",
+            "tags": [
+              "Стиль"
+            ]
+          }
+        ]
+      }
+    },
+    {
       "block_slug": "money",
       "block_state": {
         "title": "Не стоит откладывать, пора...",
