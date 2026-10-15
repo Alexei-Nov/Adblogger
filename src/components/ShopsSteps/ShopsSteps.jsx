@@ -10,7 +10,7 @@ export default function ShopsSteps({ block_state }) {
     <>
       <section className="section shops-steps">
         <div className="container">
-          <div className="shops-steps__title title h2 fw-600" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
+          <div className="shops-steps__title title h2" dangerouslySetInnerHTML={{ __html: block_state.title }}></div>
           <div className="shops-steps__wrapper">
             <div className="shops-steps__cards-list">
               {block_state.cards_list.map((card, index) => {
