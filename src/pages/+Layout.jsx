@@ -7,26 +7,16 @@ import '../style/style.css';
 
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
-import { useEffect } from 'react';
-import { usePageContext } from 'vike-react/usePageContext';
 
 export default function Layout({ children }) {
-  const pageContext = usePageContext();
-
-  useEffect(() => {
-    if (pageContext.urlPathname !== '/downtime') {
-      window.location.replace('/downtime');
-    }
-  }, [pageContext.urlPathname]);
-
   return (
     <Provider store={store}>
       <div className="body-wrapper">
-        {/* <Header /> */}
+        <Header />
         <main className="main">
           {children}
         </main>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </Provider>
   )
