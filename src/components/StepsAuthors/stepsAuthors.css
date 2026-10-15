@@ -1,0 +1,240 @@
+.shops-steps__wrapper {
+  display: flex;
+  gap: 34px;
+}
+.shops-steps__title {
+  margin-bottom: 80px;
+  font-family: "VK Sans Display Expanded";
+}
+.shops-steps__body {
+  padding: 32px;
+  background-color: #202020;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 350px;
+  position: relative;
+}
+.shops-steps__subtitle {
+  margin-bottom: auto;
+  color: transparent;
+  background: linear-gradient(113.3deg, #cdfbff 10.52%, #27cdff 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+.shops-steps__list-title {
+  margin-bottom: 30px;
+}
+.shops-steps__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.shops-steps__list-item {
+  display: flex;
+  gap: 9px;
+}
+.shops-steps__list-item-icon {
+  display: flex;
+}
+.shops-steps__cards-list {
+  display: flex;
+  gap: 22px;
+}
+.shops-steps__list-item-text {
+  display: flex;
+  align-items: center;
+}
+.shops-steps__card {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.shops-steps__card-body {
+  padding: 32px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: space-between;
+  background-color: #202020;
+  flex-grow: 1;
+}
+.shops-steps__card-num {
+  font-family: "VK Sans Display Expanded";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  color: #000;
+  background: linear-gradient(102.49deg, #cdfbff 0.24%, #27cdff 100.24%);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+}
+.shops-steps__card-img {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-bottom: -80px;
+  background-color: #83f5ff;
+}
+.shops-steps__card-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right center;
+     object-position: right center;
+}
+.shops-steps__btn {
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 100%;
+  max-width: 350px;
+  padding: 15px 50px;
+}
+.shops-steps__arrow {
+  display: none;
+}
+.shops-steps__arrow svg {
+  transform: scaleY(-1);
+}
+
+@media screen and (max-width: 1350px) {
+  .shops-steps__wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .shops-steps__body {
+    max-width: none;
+  }
+  .shops-steps__body_hide .shops-steps__body-panel {
+    max-height: 0;
+  }
+  .shops-steps__body_hide .shops-steps__arrow {
+    transform: rotate(180deg);
+  }
+  .shops-steps__subtitle {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .shops-steps__arrow {
+    display: flex;
+    transition: all ease 0.5s;
+  }
+  .shops-steps__list-title {
+    margin-top: 18px;
+  }
+  .shops-steps__body-panel {
+    overflow: hidden;
+    transition: all ease 0.5s;
+    max-height: 240px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .shops-steps__cards-list {
+    flex-direction: column;
+  }
+  .shops-steps__card {
+    flex-direction: row-reverse;
+  }
+  .shops-steps__card-num {
+    top: unset;
+    left: unset;
+    bottom: 10px;
+    right: 10px;
+    border: 1px solid #83f5ff;
+  }
+  .shops-steps__card-img {
+    margin: 0;
+    margin-bottom: -30px;
+    margin-left: -30px;
+    z-index: -1;
+    width: 100%;
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .shops-steps__card-img {
+    max-width: 250px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .shops-steps__title {
+    margin-bottom: 24px;
+    font-size: 20px;
+    line-height: normal;
+    max-width: 300px;
+  }
+  .shops-steps__btn {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 120%;
+  }
+  .shops-steps__card-img {
+    max-width: 250px;
+  }
+  .shops-steps__card-num {
+    font-size: 15px;
+    line-height: 100%;
+    width: 23px;
+    height: 23px;
+    bottom: 8px;
+    right: 6px;
+  }
+  .shops-steps__card-name {
+    font-size: 16px;
+    line-height: 110%;
+  }
+  .shops-steps__card-desc {
+    font-size: 12px;
+    line-height: 120%;
+    max-width: 135px;
+  }
+  .shops-steps__card-body {
+    padding: 20px;
+    width: 100%;
+    min-width: 210px;
+    max-width: 210px;
+    gap: 10px;
+  }
+  .shops-steps__cards-list {
+    gap: 10px;
+  }
+  .shops-steps__card-img {
+    margin-left: -20px;
+    margin-bottom: 0px;
+  }
+  .shops-steps__body {
+    padding: 18px;
+  }
+  .shops-steps__subtitle {
+    font-size: 18px;
+    line-height: 110%;
+  }
+  .shops-steps__list-title {
+    font-size: 16px;
+    line-height: 120%;
+  }
+  .shops-steps__list {
+    font-size: 14px;
+    line-height: 140%;
+    gap: 12px;
+  }
+  .shops-steps__list-item-icon svg {
+    width: 32px;
+    height: 32px;
+  }
+}

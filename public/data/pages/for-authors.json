@@ -14,42 +14,42 @@
       }
     },
     {
-      "block_slug": "shops_steps",
+      "block_slug": "steps_authors",
       "block_state": {
-        "title": "Сделайте первый шаг <br class='br-desktop'> к&nbsp;доходам — зарегистрируйтесь",
-        "subtitle": "Кто может получать доход от шопсов?",
-        "list_title": "Налоговые резиденты РФ, у которых:",
+        "title": "Сделайте первые шаги к доходу",
+        "subtitle": "Кто может подключиться?",
+        "list_title": "Открытые страницы ВКонтакте и публичные каналы в MAX, в которых:",
         "btn_text": "Начать зарабатывать",
         "btn_link": "/app",
         "items_list": [
           {
-            "text": "открытая страница — профиль или&nbsp;сообщество"
+            "text": "больше 100 подписчиков"
           },
           {
-            "text": "есть хотя&nbsp;бы одна публикация за&nbsp;30&nbsp;дней"
+            "text": "есть хотя бы одна публикация за 30 дней"
           },
           {
-            "text": "больше 100&nbsp;подписчиков"
+            "text": "соблюдаются правила модерации и условия оферты VK AdBlogger"
           }
         ],
         "cards_list": [
           {
-            "img": "./img/shops-steps/img-1.png",
-            "img_mob": "./img/shops-steps/img-1_mob.png",
+            "img": "./img/shops-steps-2/img-1.png",
+            "img_mob": "./img/shops-steps-2/img-1_mob.png",
             "name": "Зарегистрируйтесь как&nbsp;автор",
-            "desc": "Подключите профиль или&nbsp;сообщество и укажите реквизиты"
+            "desc": "Подключите страницу или канал и укажите  данные для выплат"
           },
           {
-            "img": "./img/shops-steps/img-2.png",
-            "img_mob": "./img/shops-steps/img-2_mob.png",
-            "name": "Публикуйте <br> шопсы",
-            "desc": "Выбирайте товары и&nbsp;делайте контент со&nbsp;ссылкой на&nbsp;них"
+            "img": "./img/shops-steps-2/img-2.png",
+            "img_mob": "./img/shops-steps-2/img-2_mob.png",
+            "name": "Берите заявки на рекламу",
+            "desc": "Снимайте контент с товарами или получайте заявки от рекламодателей"
           },
           {
-            "img": "./img/shops-steps/img-3.png",
-            "img_mob": "./img/shops-steps/img-3_mob.png",
-            "name": "Зарабатывайте",
-            "desc": "Получайте выплаты с&nbsp;продаж — ваш доход ничем не ограничен"
+            "img": "./img/shops-steps-2/img-3.png",
+            "img_mob": "./img/shops-steps-2/img-3_mob.png",
+            "name": "Начинайте </br> зарабатывать",
+            "desc": "Получайте деньги за рекламу и выводите их на свой счёт"
           }
         ]
       }

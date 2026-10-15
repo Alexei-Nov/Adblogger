@@ -41,6 +41,7 @@ import EntranceVideo from 'components/EntranceVideo/EntranceVideo';
 import BackpackLink from 'components/BackpackLink/BackpackLink';
 import BlogCatalog from 'components/BlogCatalog/BlogCatalog';
 import ChannelsRedesign from 'components/ChannelsRedesign/ChannelsRedesign';
+import StepsAuthors from 'components/StepsAuthors/StepsAuthors';
 
 
 export default function AllBlocks() {
@@ -131,6 +132,8 @@ export default function AllBlocks() {
             return <BlogCatalog key={i} block_state={block.block_state} />;
           case 'channels_redesign':
             return <ChannelsRedesign key={i} block_state={block.block_state} />;
+          case 'steps_authors':
+            return <StepsAuthors key={i} block_state={block.block_state} />;
           default:
             return null;
         }
