@@ -1,252 +1,252 @@
 .shops-steps {
-	&__wrapper {
-		display: flex;
-		gap: 34px;
-	}
-	&__title {
-		margin-bottom: 80px;
-		font-family: "VK Sans Display Expanded";
-	}
-	&__body {
-		padding: 32px;
-		background-color: #202020;
-		border-radius: 20px;
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-		max-width: 350px;
-		position: relative;
-	}
-	&__subtitle {
-		margin-bottom: auto;
-		color: #00d3e6;
-	}
-	&__list-title {
-		margin-bottom: 30px;
-	}
-	&__list {
-		display: flex;
-		flex-direction: column;
-		gap: 20px;
-	}
-	&__list-item {
-		display: flex;
-		gap: 9px;
-		align-items: center;
-	}
-	&__list-item-icon {
-		display: flex;
-	}
-	&__cards-list {
-		display: flex;
-		gap: 22px;
-	}
-	&__card {
-		width: 100%;
-		position: relative;
-		z-index: 1;
-		display: flex;
-		flex-direction: column;
-		overflow: hidden;
-		border-radius: 20px;
-	}
-	&__card-body {
-		padding: 32px;
-		border-radius: 20px;
-		display: flex;
-		flex-direction: column;
-		gap: 25px;
-		justify-content: space-between;
-		background-color: #202020;
-		flex-grow: 1;
-	}
-	&__card-num {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		border-radius: 50%;
-		width: 50px;
-		height: 50px;
-		color: #000;
-		background-color: #00d3e6;
-		position: absolute;
-		top: 10px;
-		left: 10px;
-		z-index: 2;
-	}
-	&__card-img {
-		display: flex;
-		width: 100%;
-		height: auto;
-		margin-bottom: -80px;
-		background-color: #83f5ff;
+  &__wrapper {
+    display: flex;
+    gap: 34px;
+  }
+  &__title {
+    margin-bottom: 80px;
+    font-family: "VK Sans Display Expanded";
+  }
+  &__body {
+    padding: 32px;
+    background-color: #202020;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+    position: relative;
+  }
+  &__subtitle {
+    margin-bottom: auto;
+    color: #00d3e6;
+  }
+  &__list-title {
+    margin-bottom: 30px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__list-item {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+  }
+  &__list-item-icon {
+    display: flex;
+  }
+  &__cards-list {
+    display: flex;
+    gap: 22px;
+  }
+  &__card {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  &__card-body {
+    padding: 32px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: space-between;
+    background-color: #202020;
+    flex-grow: 1;
+  }
+  &__card-num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: #000;
+    background-color: #00d3e6;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+  }
+  &__card-img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-bottom: -80px;
+    background-color: #83f5ff;
 
-		& img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			object-position: right center;
-		}
-	}
-	&__btn {
-		margin-top: 80px;
-		width: 100%;
-		max-width: 350px;
-	}
-	&__arrow {
-		display: none;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: right center;
+    }
+  }
+  &__btn {
+    margin-top: 80px;
+    width: 100%;
+    max-width: 350px;
+  }
+  &__arrow {
+    display: none;
 
-		& svg {
-			transform: scaleY(-1);
-		}
-	}
+    & svg {
+      transform: scaleY(-1);
+    }
+  }
 }
 
 @media screen and (max-width: 1350px) {
-	.shops-steps {
-		&__wrapper {
-			flex-direction: column;
-			gap: 20px;
-		}
-		&__body {
-			max-width: none;
+  .shops-steps {
+    &__wrapper {
+      flex-direction: column;
+      gap: 20px;
+    }
+    &__body {
+      max-width: none;
 
-			&_hide {
-				& .shops-steps {
-					&__body-panel {
-						max-height: 0;
-					}
-					&__arrow {
-						transform: rotate(180deg);
-					}
-				}
-			}
-		}
-		&__subtitle {
-			display: flex;
-			gap: 10px;
-			justify-content: space-between;
-			align-items: center;
-		}
-		&__arrow {
-			display: flex;
-			transition: all ease 0.5s;
-		}
-		&__list-title {
-			margin-top: 18px;
-		}
-		&__body-panel {
-			overflow: hidden;
-			transition: all ease 0.5s;
-			max-height: 240px;
-		}
-	}
+      &_hide {
+        & .shops-steps {
+          &__body-panel {
+            max-height: 0;
+          }
+          &__arrow {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+    &__subtitle {
+      display: flex;
+      gap: 10px;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__arrow {
+      display: flex;
+      transition: all ease 0.5s;
+    }
+    &__list-title {
+      margin-top: 18px;
+    }
+    &__body-panel {
+      overflow: hidden;
+      transition: all ease 0.5s;
+      max-height: 240px;
+    }
+  }
 }
 
 @media screen and (max-width: 1024px) {
-	.shops-steps {
-		&__cards-list {
-			flex-direction: column;
-		}
-		&__card {
-			flex-direction: row-reverse;
-		}
-		&__card-num {
-			top: unset;
-			left: unset;
-			bottom: 10px;
-			right: 10px;
-			border: 1px solid #83f5ff;
-		}
-		&__card-img {
-			margin: 0;
-			margin-bottom: -30px;
-			margin-left: -30px;
-			z-index: -1;
-			width: 100%;
-			max-width: 300px;
-		}
-	}
+  .shops-steps {
+    &__cards-list {
+      flex-direction: column;
+    }
+    &__card {
+      flex-direction: row-reverse;
+    }
+    &__card-num {
+      top: unset;
+      left: unset;
+      bottom: 10px;
+      right: 10px;
+      border: 1px solid #83f5ff;
+    }
+    &__card-img {
+      margin: 0;
+      margin-bottom: -30px;
+      margin-left: -30px;
+      z-index: -1;
+      width: 100%;
+      max-width: 300px;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
-	.shops-steps {
-		&__card-img {
-			max-width: 250px;
-		}
-	}
+  .shops-steps {
+    &__card-img {
+      max-width: 250px;
+    }
+  }
 }
 
 @media screen and (max-width: 570px) {
-	.shops-steps {
-		&__title {
-			margin-bottom: 24px;
-			font-size: 20px;
-			line-height: normal;
-			max-width: 300px;
-		}
-		&__btn {
-			width: 100%;
-			margin-top: 20px;
-			font-size: 20px;
-			line-height: 120%;
-		}
-		&__card-img {
-			max-width: 250px;
-		}
-		&__card-num {
-			font-size: 15px;
-			line-height: 100%;
-			width: 23px;
-			height: 23px;
-			bottom: 8px;
-			right: 6px;
-		}
-		&__card-name {
-			font-size: 16px;
-			line-height: 110%;
-		}
-		&__card-desc {
-			font-size: 12px;
-			line-height: 120%;
-			max-width: 135px;
-		}
-		&__card-body {
-			padding: 20px;
-			width: 100%;
-			min-width: 210px;
-			max-width: 210px;
-			gap: 10px;
-		}
-		&__cards-list {
-			gap: 10px;
-		}
-		&__card-img {
-			// max-width: 135px;
-			margin-left: -20px;
-			margin-bottom: 0px;
-		}
-		&__body {
-			padding: 18px;
-		}
-		&__subtitle {
-			font-size: 18px;
-			line-height: 110%;
-		}
-		&__list-title {
-			font-size: 16px;
-			line-height: 120%;
-		}
-		&__list {
-			font-size: 14px;
-			line-height: 140%;
-			gap: 12px;
-		}
-		&__list-item-icon {
-			& svg {
-				width: 32px;
-				height: 32px;
-			}
-		}
-	}
+  .shops-steps {
+    &__title {
+      margin-bottom: 24px;
+      font-size: 20px;
+      line-height: normal;
+      max-width: 300px;
+    }
+    &__btn {
+      width: 100%;
+      margin-top: 20px;
+      font-size: 20px;
+      line-height: 120%;
+    }
+    &__card-img {
+      max-width: 250px;
+    }
+    &__card-num {
+      font-size: 15px;
+      line-height: 100%;
+      width: 23px;
+      height: 23px;
+      bottom: 8px;
+      right: 6px;
+    }
+    &__card-name {
+      font-size: 16px;
+      line-height: 110%;
+    }
+    &__card-desc {
+      font-size: 12px;
+      line-height: 120%;
+      max-width: 135px;
+    }
+    &__card-body {
+      padding: 20px;
+      width: 100%;
+      min-width: 210px;
+      max-width: 210px;
+      gap: 10px;
+    }
+    &__cards-list {
+      gap: 10px;
+    }
+    &__card-img {
+      // max-width: 135px;
+      margin-left: -20px;
+      margin-bottom: 0px;
+    }
+    &__body {
+      padding: 18px;
+    }
+    &__subtitle {
+      font-size: 18px;
+      line-height: 110%;
+    }
+    &__list-title {
+      font-size: 16px;
+      line-height: 120%;
+    }
+    &__list {
+      font-size: 14px;
+      line-height: 140%;
+      gap: 12px;
+    }
+    &__list-item-icon {
+      & svg {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
 }
