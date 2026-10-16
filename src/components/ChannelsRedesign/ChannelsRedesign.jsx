@@ -47,7 +47,7 @@ export default function ChannelsRedesign({ block_state }) {
               {block_state.tags.map((tag, i) => {
                 return (
                   <div key={i} className={"channels-redesign__panel-item" + (chanellsTag === tag.name ? ' channels-redesign__panel-item_active' : '')}>
-                    <div className="channels-redesign__panel-money fw-600 h2">{tag.money}</div>
+                    <div className="channels-redesign__panel-money fw-600 h2" dangerouslySetInnerHTML={{ __html: tag.money }}></div>
                     <div className="channels-redesign__panel-text text-24 fw-500" dangerouslySetInnerHTML={{ __html: block_state.label }}></div>
                     <picture className="channels-redesign__panel-img">
                       <source media="(max-width: 1024px)" srcSet={tag.img_bg_mob} />
@@ -103,7 +103,7 @@ export default function ChannelsRedesign({ block_state }) {
                                 <path d="M15.3755 20.8171C8.78942 20.8171 5.03287 16.302 4.87634 8.78882H8.17539C8.28375 14.3033 10.7159 16.6391 12.6423 17.1207V8.78882H15.7488V13.5447C17.6512 13.34 19.6497 11.1728 20.3239 8.78882H23.4304C22.9127 11.7267 20.7454 13.8939 19.2042 14.7849C20.7454 15.5073 23.2138 17.3977 24.153 20.8171H20.7334C19.9989 18.5295 18.1689 16.7595 15.7488 16.5187V20.8171H15.3755Z" fill="white" />
                               </svg>
                             </div>
-                            <div className="channels-redesign__subscribers-text text-20">{channel.subscribers}</div>
+                            <div className="channels-redesign__subscribers-text text-20" dangerouslySetInnerHTML={{ __html: channel.subscribers }}></div>
                           </div>
                           <div className="channels-redesign__name h3" dangerouslySetInnerHTML={{ __html: channel.name }}></div>
                         </div>

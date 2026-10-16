@@ -2,6 +2,7 @@
   opacity: 0.6;
   transform: scale(0.9);
   transition: all ease 0.5s;
+  height: auto;
 }
 .channels-redesign__slide.swiper-slide-active {
   opacity: 1;
@@ -10,6 +11,7 @@
 .channels-redesign__card {
   width: 100%;
   min-height: 354px;
+  height: 100%;
   padding: 32px;
   border-radius: 16px;
   display: flex;
