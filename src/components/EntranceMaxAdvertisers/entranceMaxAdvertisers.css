@@ -103,7 +103,6 @@
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
-  transition: all ease 0.5s;
 }
 .entrance-max-advertisers__img img:nth-child(2) {
   position: absolute;

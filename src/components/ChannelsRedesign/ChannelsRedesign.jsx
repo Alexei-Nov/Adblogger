@@ -78,7 +78,7 @@ export default function ChannelsRedesign({ block_state }) {
                 dynamicBullets: true,
               }}
               centeredSlides={true}
-              // loop={true}
+              loop={true}
               loopAdditionalSlides={10}
               breakpoints={{
                 0: {
@@ -105,7 +105,7 @@ export default function ChannelsRedesign({ block_state }) {
                             </div>
                             <div className="channels-redesign__subscribers-text text-20" dangerouslySetInnerHTML={{ __html: channel.subscribers }}></div>
                           </div>
-                          <div className="channels-redesign__name h3" dangerouslySetInnerHTML={{ __html: channel.name }}></div>
+                          <div className="channels-redesign__name text-32 fw-500" dangerouslySetInnerHTML={{ __html: channel.name }}></div>
                         </div>
                         <div className="channels-redesign__img">
                           <img src={channel.photoPath} alt="img" />
