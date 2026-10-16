@@ -31,6 +31,7 @@
     border-radius: 16px;
     background-color: #fff;
     border: 1px solid #cdfbff;
+    overflow: hidden;
 
     & img {
       width: 100%;
@@ -244,6 +245,7 @@
       min-width: 72px;
       width: 72px;
       height: 72px;
+      border-radius: 8px;
     }
     &__card {
       min-height: 165px;
