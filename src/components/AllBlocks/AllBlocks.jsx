@@ -42,6 +42,7 @@ import BackpackLink from 'components/BackpackLink/BackpackLink';
 import BlogCatalog from 'components/BlogCatalog/BlogCatalog';
 import ChannelsRedesign from 'components/ChannelsRedesign/ChannelsRedesign';
 import StepsAuthors from 'components/StepsAuthors/StepsAuthors';
+import FormatsAuthors from 'components/FormatsAuthors/FormatsAuthors';
 
 
 export default function AllBlocks() {
@@ -134,6 +135,8 @@ export default function AllBlocks() {
             return <ChannelsRedesign key={i} block_state={block.block_state} />;
           case 'steps_authors':
             return <StepsAuthors key={i} block_state={block.block_state} />;
+          case 'formats_authors':
+            return <FormatsAuthors key={i} block_state={block.block_state} />;
           default:
             return null;
         }

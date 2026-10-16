@@ -14,6 +14,56 @@
       }
     },
     {
+      "block_slug": "formats_authors",
+      "block_state": {
+        "title": "Вы решаете, что публиковать",
+        "btn_link": "/app",
+        "btn_text": "Начать продвижение",
+        "list": [
+          {
+            "name": "Контент на&nbsp;заказ",
+            "desc": "Заказывайте авторские интеграции по своему брифу",
+            "label": "Где доступно",
+            "img": "/img/formats-authors/img-2.png",
+            "socials": [
+              {
+                "icon": "/img/formats-authors/icon-1.svg",
+                "link": "#link"
+              }
+            ]
+          },
+          {
+            "name": "Посевы",
+            "desc": "Размещайте готовые креативы на площадках авторов",
+            "label": "Где доступно",
+            "img": "/img/formats-authors/img-1.png",
+            "socials": [
+              {
+                "icon": "/img/formats-authors/icon-1.svg",
+                "link": "#link"
+              },
+              {
+                "icon": "/img/formats-authors/icon-2.svg",
+                "link": "#link"
+              }
+            ]
+          },
+          {
+            "name": "Шопсы",
+            "desc": "Размещайте контент с товарами и получайте до 50% с продаж",
+            "label": "Где доступно",
+            "img": "/img/formats-authors/img-3.png",
+            "socials": [
+              {
+                "icon": "/img/formats-authors/icon-1.svg",
+                "link": "#link"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
       "block_slug": "steps_authors",
       "block_state": {
         "title": "Сделайте первые шаги к доходу",

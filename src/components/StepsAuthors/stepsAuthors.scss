@@ -53,7 +53,6 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    border-radius: 20px;
   }
   &__card-body {
     padding: 32px;
@@ -87,12 +86,13 @@
     height: auto;
     margin-bottom: -80px;
     background-color: #83f5ff;
+    border-radius: 20px;
 
     & img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: right center;
+      object-position: left center;
     }
   }
   &__btn {
@@ -159,21 +159,21 @@
     }
     &__card {
       flex-direction: row-reverse;
+      gap: 4px;
     }
     &__card-num {
-      top: unset;
       left: unset;
-      bottom: 10px;
       right: 10px;
       border: 1px solid #83f5ff;
     }
     &__card-img {
       margin: 0;
-      margin-bottom: -30px;
-      margin-left: -30px;
       z-index: -1;
       width: 100%;
       max-width: 300px;
+      border-radius: 20px;
+      overflow: hidden;
+      aspect-ratio: 125/107;
     }
   }
 }
@@ -202,13 +202,14 @@
     }
     &__card-img {
       max-width: 250px;
+      border-radius: 9px;
     }
     &__card-num {
-      font-size: 15px;
+      font-size: 14px;
       line-height: 100%;
-      width: 23px;
-      height: 23px;
-      bottom: 8px;
+      width: 28px;
+      height: 28px;
+      top: 6px;
       right: 6px;
     }
     &__card-name {
@@ -221,40 +222,38 @@
       max-width: 135px;
     }
     &__card-body {
-      padding: 20px;
+      padding: 12px;
       width: 100%;
-      min-width: 210px;
-      max-width: 210px;
+      min-width: 180px;
+      // max-width: 180px;
       gap: 10px;
+      border-radius: 9px;
     }
     &__cards-list {
       gap: 10px;
     }
-    &__card-img {
-      // max-width: 135px;
-      margin-left: -20px;
-      margin-bottom: 0px;
-    }
     &__body {
       padding: 18px;
+      border-radius: 9px;
     }
     &__subtitle {
       font-size: 18px;
       line-height: 110%;
     }
     &__list-title {
-      font-size: 16px;
+      font-size: 14px;
       line-height: 120%;
+      margin-bottom: 13px;
     }
     &__list {
-      font-size: 14px;
+      font-size: 12px;
       line-height: 140%;
       gap: 12px;
     }
     &__list-item-icon {
       & svg {
-        width: 32px;
-        height: 32px;
+        width: 22px;
+        height: 22px;
       }
     }
   }
