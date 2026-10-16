@@ -45,7 +45,8 @@ export default function CaseRedesign({ block_state }) {
 
             pagination={{
               el: '.case-redesign__pagination',
-              clickable: true
+              clickable: true,
+              dynamicBullets: true
             }}
 
             navigation={{
@@ -56,12 +57,15 @@ export default function CaseRedesign({ block_state }) {
             breakpoints={{
               0: {
                 slidesPerView: 1,
+                spaceBetween: 0,
               },
               700: {
                 slidesPerView: 2,
+                spaceBetween: 24,
               },
               1025: {
                 slidesPerView: 'auto',
+                spaceBetween: 24,
               },
             }}
           >
@@ -113,7 +117,7 @@ export default function CaseRedesign({ block_state }) {
             </div>
           </Swiper>
 
-          <div className="case-redesign__pagination slider-pagination slider-pagination_gradient"></div>
+          <div className="case-redesign__pagination slider-pagination slider-pagination_gradient swiper-pagination"></div>
           <a href={block_state.btn_link} className="case-redesign__btn btn btn_rounded btn_border fw-500 text-26">
             {block_state.btn_text}
           </a>

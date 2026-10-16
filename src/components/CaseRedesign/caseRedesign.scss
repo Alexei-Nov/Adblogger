@@ -77,8 +77,13 @@
     top: 50%;
     transform: translateY(-50%);
     right: 10px;
-    width: calc(100% - 20px);
+    width: 100%;
     z-index: 3;
+  }
+  &__pagination {
+    margin: 0 auto;
+    margin-top: 50px;
+    position: static !important;
   }
   &__next {
     margin-left: auto;
@@ -166,6 +171,12 @@
     &__slide {
       padding: 30px;
       height: 340px;
+      transition: all ease 0.5s;
+
+      &:not(.swiper-slide-active) {
+        opacity: 0.4;
+        transform: scale(0.9);
+      }
     }
     &__name {
       font-size: 20px;

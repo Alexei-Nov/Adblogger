@@ -60,6 +60,7 @@
   margin-top: 30px;
   position: static !important;
   transform: none;
+  z-index: 1;
 }
 .channels-redesign__navigation {
   position: absolute;
@@ -265,7 +266,7 @@
     line-height: 120%;
   }
   .channels-redesign__desc {
-    max-width: 160px;
+    max-width: none;
   }
   .channels-redesign__bottom-text {
     font-size: 12px !important;

@@ -435,7 +435,7 @@ body {
   transform: none !important;
 }
 .slider-pagination.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
-  margin: 4px !important;
+  margin: 0 4px !important;
 }
 
 .slider-navigation {
@@ -511,10 +511,11 @@ ul.list-stars > li::before {
     padding: 0 24px;
   }
   .title {
-    margin-bottom: 48px;
     font-size: 24px;
+    font-size: 20px;
     line-height: 110%;
     font-weight: 600;
+    margin-bottom: 48px;
   }
   .btn_big {
     padding: 14px 30px;
