@@ -34,10 +34,10 @@
 .entrance-max-authors__bg {
   position: absolute;
   top: 50%;
-  right: 50px;
+  right: 30px;
   transform: translateY(-50%);
   width: auto;
-  height: 90%;
+  height: 91%;
   z-index: -1;
 }
 .entrance-max-authors__img {
@@ -149,7 +149,7 @@
     margin-top: 0px;
   }
   .entrance-max-authors__media {
-    transform: translateX(-10px);
+    transform: translateX(0px);
     margin-top: -40px;
     margin-right: 0;
   }
@@ -157,8 +157,14 @@
     max-width: none;
     width: auto;
     margin-left: -80px;
+    transform: translateX(50px);
   }
   .entrance-max-authors__bg {
     right: 0;
+    width: 95%;
+  }
+  .entrance-max-authors__bg img {
+    -o-object-fit: unset;
+       object-fit: unset;
   }
 }

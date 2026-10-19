@@ -32,10 +32,10 @@
   &__bg {
     position: absolute;
     top: 50%;
-    right: 50px;
+    right: 30px;
     transform: translateY(-50%);
     width: auto;
-    height: 90%;
+    height: 91%;
     z-index: -1;
   }
   &__img {
@@ -154,7 +154,8 @@
       margin-top: 0px;
     }
     &__media {
-      transform: translateX(-10px);
+      transform: translateX(0px);
+
       margin-top: -40px;
       margin-right: 0;
     }
@@ -162,9 +163,16 @@
       max-width: none;
       width: auto;
       margin-left: -80px;
+      transform: translateX(50px);
     }
     &__bg {
       right: 0;
+      // height: 98%;
+      width: 95%;
+
+      & img {
+        object-fit: unset;
+      }
     }
   }
 }

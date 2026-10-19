@@ -15,7 +15,7 @@ export default function NumberMaxAuthors({ block_state }) {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: wrapper.current,
-        start: 'top 30%',
+        start: 'top 50%',
         end: 'bottom top',
         scrub: false,
         markers: false,
@@ -36,7 +36,7 @@ export default function NumberMaxAuthors({ block_state }) {
       scale: 0,
       opacity: 0,
     }, {
-      delay: 0.5,
+      delay: 0.2,
       scale: 1,
       opacity: 1,
       duration: 2,
