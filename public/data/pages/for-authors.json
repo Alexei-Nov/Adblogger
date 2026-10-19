@@ -64,6 +64,41 @@
       }
     },
     {
+      "block_slug": "number_authors",
+      "block_state": {
+        "title": "Авторы уже заработали здесь",
+        "number": "1.6",
+        "number_text": "&nbsp;млрд&nbsp;₽",
+        "label": "доход авторов VK AdBlogger за 2026 год",
+        "img_list": [
+          {
+            "img": "/img/number-authors/img-1.png"
+          },
+          {
+            "img": "/img/number-authors/img-2.png"
+          },
+          {
+            "img": "/img/number-authors/img-3.png"
+          },
+          {
+            "img": "/img/number-authors/img-4.png"
+          },
+          {
+            "img": "/img/number-authors/img-5.png"
+          },
+          {
+            "img": "/img/number-authors/img-6.png"
+          },
+          {
+            "img": "/img/number-authors/img-7.png"
+          },
+          {
+            "img": "/img/number-authors/img-8.png"
+          }
+        ]
+      }
+    },
+    {
       "block_slug": "steps_authors",
       "block_state": {
         "title": "Сделайте первые шаги к доходу",

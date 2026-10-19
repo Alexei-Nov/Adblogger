@@ -1,0 +1,103 @@
+.number-authors {
+  &__title {
+    margin-bottom: 0 !important;
+  }
+  &__label {
+    color: #8f8f8fba;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  &__body {
+    font-family: "VK Sans Display Expanded";
+    font-weight: 600;
+    font-size: 90px;
+    line-height: 110%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: bottom;
+
+    background: linear-gradient(96.91deg, #b9f5fe 22.81%, #3cd2fe 101.12%);
+    background-clip: text;
+    color: transparent;
+    display: flex;
+    justify-content: center;
+  }
+  &__wrapper {
+    position: relative;
+    z-index: 1;
+    padding: 285px 0;
+  }
+  &__authors {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 1320px;
+    height: 100%;
+  }
+  &__img {
+    display: flex;
+    width: 96px;
+    height: 96px;
+    position: absolute;
+    z-index: 1;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    &:nth-child(1) {
+      width: 218px;
+      height: 278px;
+      top: 27px;
+      left: 126px;
+    }
+    &:nth-child(2) {
+      width: 170px;
+      height: 182px;
+      top: 64px;
+      left: 431px;
+    }
+    &:nth-child(3) {
+      width: 210px;
+      height: 183px;
+      top: 37px;
+      left: 668px;
+    }
+    &:nth-child(4) {
+      width: 235px;
+      height: 278px;
+      top: 31px;
+      left: 986px;
+    }
+    &:nth-child(5) {
+      width: 236px;
+      height: 218px;
+      top: 414px;
+      left: 160px;
+    }
+    &:nth-child(6) {
+      width: 196px;
+      height: 178px;
+      top: 478px;
+      left: 456px;
+    }
+    &:nth-child(7) {
+      width: 160px;
+      height: 150px;
+      top: 423px;
+      left: 707px;
+    }
+    &:nth-child(8) {
+      width: 232px;
+      height: 313px;
+      top: 375px;
+      left: 928px;
+    }
+  }
+}

@@ -43,6 +43,7 @@ import BlogCatalog from 'components/BlogCatalog/BlogCatalog';
 import ChannelsRedesign from 'components/ChannelsRedesign/ChannelsRedesign';
 import StepsAuthors from 'components/StepsAuthors/StepsAuthors';
 import FormatsAuthors from 'components/FormatsAuthors/FormatsAuthors';
+import NumberAuthors from 'components/NumberAuthors/NumberAuthors';
 
 
 export default function AllBlocks() {
@@ -137,6 +138,8 @@ export default function AllBlocks() {
             return <StepsAuthors key={i} block_state={block.block_state} />;
           case 'formats_authors':
             return <FormatsAuthors key={i} block_state={block.block_state} />;
+          case 'number_authors':
+            return <NumberAuthors key={i} block_state={block.block_state} />;
           default:
             return null;
         }
