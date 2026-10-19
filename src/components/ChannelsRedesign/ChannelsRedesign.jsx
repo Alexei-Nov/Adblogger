@@ -6,22 +6,19 @@ import { Navigation, Pagination, Mousewheel } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 export default function ChannelsRedesign({ block_state }) {
-  let swiper = useRef();
-  const [chanellsTag, setChanellsTag] = useState(block_state.tags[0].name)
+  const swiper = useRef();
+  const [chanellsTag, setChanellsTag] = useState(0);
 
-  function filterChannels(tag) {
-    if (chanellsTag !== tag) {
-      setChanellsTag(tag)
-      swiper.current.swiper.update()
-      // swiper.current.swiper.slideToLoop(0)
+  function filterChannels(index) {
+    if (chanellsTag !== index) {
+      setChanellsTag(index);
+      swiper.current.swiper.update();
     }
   }
 
-  let resultChannelsArr = block_state.channels.filter((channel) => channel.tags.includes(chanellsTag))
-
-  if (!chanellsTag) {
-    resultChannelsArr = block_state.channels
-  }
+  const resultChannelsArr = block_state.channels.filter((channel) =>
+    channel.tags.includes(block_state.tags[chanellsTag].name)
+  );
 
   return (
     <>
@@ -33,20 +30,68 @@ export default function ChannelsRedesign({ block_state }) {
           }
           <div className="channels-redesign__wrapper">
             <div className="channels-redesign__tags text-20 fw-500">
-              {block_state.tags.map((tag, i) => {
-                return (
+              <Swiper className='channels-redesign__slider-tags'
+                modules={[Navigation]}
+                spaceBetween={0}
+                speed={800}
+                navigation={{
+                  prevEl: '.channels-redesign__prev-tags',
+                  nextEl: '.channels-redesign__next-tags',
+                }}
+                slidesPerView='auto'
+                centeredSlides={true}
+                allowTouchMove={false}
+              >
+                {block_state.tags.map((tag, index) => {
+                  return (
+                    <SwiperSlide key={index} className='channels-redesign__slide-tag'>
+                      <div
+                        className={"channels-redesign__tag btn btn_rounded btn_transparent" + (chanellsTag === index ? ' channels-redesign__tag_active' : '')}
+                        onClick={() => { filterChannels(index) }}
+                      >{tag.name}</div>
+                    </SwiperSlide>
+                  )
+                })}
+
+                <div className="channels-redesign__navigation slider-navigation">
                   <div
-                    key={i}
-                    className={"channels-redesign__tag btn btn_rounded btn_transparent" + (chanellsTag === tag.name ? ' channels-redesign__tag_active' : '')}
-                    onClick={() => { filterChannels(tag.name) }}
-                  >{tag.name}</div>
-                )
-              })}
+                    className="channels-redesign__prev-tags channels-redesign__navigation-btn slider-prev"
+                    onClick={() => { filterChannels(chanellsTag - 1) }}
+                  >
+                    <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="48.2755" y="48.2755" width="48.2755" height="48.2755" rx="24.1377" transform="rotate(-180 48.2755 48.2755)" fill="url(#paint0_linear_11085_57665)" />
+                      <path fillRule="evenodd" clipRule="evenodd" d="M28.0613 33.6404C28.6437 33.0922 28.6715 32.1756 28.1233 31.5932L20.7817 23.7927L28.1233 15.9923C28.6715 15.4098 28.6437 14.4933 28.0613 13.9451C27.4788 13.3969 26.5622 13.4246 26.014 14.0071L17.7382 22.8001C17.2134 23.3578 17.2134 24.2277 17.7382 24.7853L26.014 33.5784C26.5622 34.1608 27.4788 34.1886 28.0613 33.6404Z" fill="black" />
+                      <defs>
+                        <linearGradient id="paint0_linear_11085_57665" x1="72.4133" y1="48.2755" x2="72.4133" y2="96.551" gradientUnits="userSpaceOnUse">
+                          <stop stopColor="#CDFBFF" />
+                          <stop offset="1" stopColor="#00EAFF" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div
+                    className="channels-redesign__next-tags channels-redesign__navigation-btn slider-next"
+                    onClick={() => { filterChannels(chanellsTag + 1) }}
+                  >
+                    <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="48.2755" height="48.2755" rx="24.1377" transform="matrix(1 0 0 -1 0 48.2755)" fill="url(#paint0_linear_11085_57662)" />
+                      <path fillRule="evenodd" clipRule="evenodd" d="M20.2143 33.6404C19.6318 33.0922 19.604 32.1756 20.1522 31.5932L27.4938 23.7927L20.1522 15.9923C19.604 15.4098 19.6318 14.4933 20.2143 13.9451C20.7967 13.3969 21.7133 13.4246 22.2615 14.0071L30.5373 22.8001C31.0621 23.3578 31.0621 24.2277 30.5373 24.7853L22.2615 33.5784C21.7133 34.1608 20.7967 34.1886 20.2143 33.6404Z" fill="black" />
+                      <defs>
+                        <linearGradient id="paint0_linear_11085_57662" x1="24.1377" y1="0" x2="24.1377" y2="48.2755" gradientUnits="userSpaceOnUse">
+                          <stop stopColor="#CDFBFF" />
+                          <stop offset="1" stopColor="#00EAFF" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
+              </Swiper>
             </div>
+
             <div className="channels-redesign__panel">
               {block_state.tags.map((tag, i) => {
                 return (
-                  <div key={i} className={"channels-redesign__panel-item" + (chanellsTag === tag.name ? ' channels-redesign__panel-item_active' : '')}>
+                  <div key={i} className={"channels-redesign__panel-item" + (chanellsTag === i ? ' channels-redesign__panel-item_active' : '')}>
                     <div className="channels-redesign__panel-money fw-600 h2" dangerouslySetInnerHTML={{ __html: tag.money }}></div>
                     <div className="channels-redesign__panel-text text-24 fw-500" dangerouslySetInnerHTML={{ __html: block_state.label }}></div>
                     <picture className="channels-redesign__panel-img">
@@ -71,23 +116,14 @@ export default function ChannelsRedesign({ block_state }) {
                 prevEl: '.channels-redesign__prev',
                 nextEl: '.channels-redesign__next',
               }}
-              slidesPerView='auto'
+              slidesPerView='1'
               pagination={{
                 el: '.channels-redesign__pagination',
                 clickable: true,
                 dynamicBullets: true,
               }}
-              centeredSlides={true}
               loop={true}
               loopAdditionalSlides={10}
-              breakpoints={{
-                0: {
-                  slidesPerView: 1,
-                },
-                570: {
-                  slidesPerView: 'auto',
-                }
-              }}
             >
 
               {[...Array(3)].map((row, i) => resultChannelsArr.map((channel, i) => {
