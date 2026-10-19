@@ -3,6 +3,7 @@
     opacity: 0.6;
     transform: scale(0.9);
     transition: all ease 0.5s;
+    height: auto;
 
     &.swiper-slide-active {
       opacity: 1;
@@ -12,6 +13,7 @@
   &__card {
     width: 100%;
     min-height: 354px;
+    height: 100%;
     padding: 32px;
     border-radius: 16px;
     display: flex;
@@ -29,6 +31,7 @@
     border-radius: 16px;
     background-color: #fff;
     border: 1px solid #cdfbff;
+    overflow: hidden;
 
     & img {
       width: 100%;
@@ -60,6 +63,7 @@
     margin-top: 30px;
     position: static !important;
     transform: none;
+    z-index: 1;
   }
   &__navigation {
     position: absolute;
@@ -179,6 +183,22 @@
   &__bottom-text {
     color: #696969;
   }
+  &__slide-tag {
+    display: contents;
+  }
+  &__slider-tags {
+    display: contents;
+
+    & .swiper-wrapper {
+      display: contents;
+    }
+
+    & .channels-redesign {
+      &__navigation {
+        display: none;
+      }
+    }
+  }
 }
 
 // max
@@ -229,6 +249,56 @@
     &__pagination {
       margin-top: 14px;
     }
+    &__slider-tags {
+      display: flex;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+
+      & .swiper-wrapper {
+        display: flex;
+      }
+
+      & .channels-redesign {
+        &__navigation {
+          display: flex;
+          width: 100% !important;
+        }
+        &__navigation-btn {
+          width: 28px;
+          height: 28px;
+          position: relative;
+          z-index: 1;
+
+          &::after {
+            display: block;
+            content: "";
+            width: 140%;
+            height: 120%;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #000;
+            filter: blur(10px);
+            z-index: -1;
+          }
+        }
+      }
+    }
+    &__slide-tag {
+      display: flex;
+      width: fit-content;
+    }
+    &__slide-tag {
+      pointer-events: none;
+      opacity: 0.5;
+
+      &.swiper-slide-active {
+        opacity: 1;
+      }
+    }
   }
 }
 
@@ -241,6 +311,7 @@
       min-width: 72px;
       width: 72px;
       height: 72px;
+      border-radius: 8px;
     }
     &__card {
       min-height: 165px;
@@ -283,7 +354,7 @@
       line-height: 120%;
     }
     &__desc {
-      max-width: 160px;
+      max-width: none;
     }
     &__bottom-text {
       font-size: 12px !important;
