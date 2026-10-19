@@ -21,6 +21,10 @@ export default function NumberAuthors({ block_state }) {
     })
 
     const number = gsap.utils.selector(wrapper)('.number-authors__number')
+    const heading = wrapper.current.querySelector('.number-authors__body')
+    const authors = wrapper.current.querySelector('.number-authors__authors-wrapper')
+
+
     tl.to(number, {
       textContent: block_state.number,
       duration: 1.5,
@@ -30,6 +34,26 @@ export default function NumberAuthors({ block_state }) {
         this.targets()[0].textContent = (+this.targets()[0].textContent).toFixed(1)
       },
     }, 0)
+    tl.fromTo(heading, {
+      scale: 0,
+      opacity: 0,
+    }, {
+      scale: 1,
+      opacity: 1,
+      duration: 1.5,
+      ease: 'power3.out',
+    }, 0)
+    tl.fromTo(authors, {
+      scale: 0,
+      opacity: 0,
+    }, {
+      delay: 0.2,
+      scale: 1,
+      opacity: 1,
+      duration: 2,
+      ease: 'power3.out',
+    }, 0)
+
   }, [])
 
   return (
@@ -43,11 +67,13 @@ export default function NumberAuthors({ block_state }) {
             <div className="number-authors__number-text" dangerouslySetInnerHTML={{ __html: block_state.number_text }}></div>
           </div>
           <div className="number-authors__authors">
-            {block_state.img_list.map((img, i) => (
-              <div key={i} className="number-authors__img">
-                <img src={img.img} alt="img" />
-              </div>
-            ))}
+            <div className="number-authors__authors-wrapper">
+              {block_state.img_list.map((img, i) => (
+                <div key={i} className="number-authors__img">
+                  <img src={img.img} alt="img" />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
