@@ -17,7 +17,6 @@ export default function Header() {
     document.body.classList.remove('show-menu')
   }
 
-  const pageContext = usePageContext()
   const pathname = pageContext.urlPathname
 
   return (
