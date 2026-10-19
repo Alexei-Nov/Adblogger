@@ -82,7 +82,7 @@
     &:nth-child(3) {
       max-width: 150px;
       top: 230px;
-      right: 0px;
+      right: -40px;
       animation-delay: 0.3s;
       animation-duration: 3.5s;
     }
@@ -105,7 +105,7 @@
       height: auto;
       object-fit: cover;
       object-position: top;
-      // transition: all ease 0.5s;
+      transition: all ease 0.5s;
 
       &:nth-child(2) {
         position: absolute;
