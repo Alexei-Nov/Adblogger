@@ -2,6 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import './header.css'
 import { handleTracking } from 'utils/tracking'
+import { usePageContext } from 'vike-react/usePageContext'
 
 export default function Header() {
   const btnState = useSelector(state => state.toolkit.registrationBtn)
@@ -14,7 +15,8 @@ export default function Header() {
     document.body.classList.remove('show-menu')
   }
 
-  const pathname = typeof window !== 'undefined' ? window.location.pathname : ''
+  const pageContext = usePageContext()
+  const pathname = pageContext.urlPathname
 
   return (
     <header className='header'>
