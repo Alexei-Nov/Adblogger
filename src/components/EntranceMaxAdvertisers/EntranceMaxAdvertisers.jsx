@@ -28,7 +28,7 @@ export default function EntranceMaxAdvertisers({ block_state }) {
                   </svg>
                 </span>
 
-                <span data-stage="2">в&nbsp;сообществах</span>
+                <span data-stage="2">вконтакте</span>
               </div>
             </div>
             <a href={block_state.btn_link} class="entrance-max-advertisers__btn btn btn_rounded btn_border fw-500 text-26">
