@@ -6,57 +6,37 @@
   z-index: 9;
   pointer-events: none;
 }
-
 .backpack-link__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding-right: 24px;
+  padding-right: 50px;
   margin-left: auto;
   position: relative;
   z-index: 1;
   pointer-events: none;
-  margin-right: 20px;
 }
-
 .backpack-link__panel {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: flex-end;
   width: 100%;
-  max-width: 360px;
-  height: -webkit-fit-content;
+  max-width: 308px;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 10px;
-  padding-left: 17px;
-  font-family: "VK Sans Display Condensed";
-  font-weight: 600;
-  font-style: italic;
-  font-size: 41.09px;
-  line-height: 100%;
+  padding: 20px 24px;
+  padding-right: 90px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 101%;
   letter-spacing: 0%;
   overflow: hidden;
-  -webkit-transition: all ease-in-out 0.5s;
   transition: all ease-in-out 0.5s;
   cursor: pointer;
   position: relative;
   z-index: 1;
   pointer-events: all;
-  background-image: url("/public/img/backpack-link/bg.svg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
 }
-
 .backpack-link__panel-bg {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 100%;
@@ -65,96 +45,28 @@
   left: 0px;
   z-index: -1;
 }
-
-.backpack-link__panel-bg svg {
+.backpack-link__panel-bg img {
   width: 100%;
   height: 100%;
 }
-
-.backpack-link__panel-blur {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: -2;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
-  -webkit-clip-path: url("#glassClip");
-          clip-path: url("#glassClip");
-}
-
-.backpack-link__panel-blur svg {
-  width: 100%;
-  height: 100%;
-}
-
 .backpack-link__title {
-  text-align: right;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin-right: 17px;
-  -webkit-transition: all ease-in-out 0.5s;
   transition: all ease-in-out 0.5s;
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
+  transition-delay: 0.3s;
 }
-
-.backpack-link__currency {
-  font-size: 46px;
-  line-height: 100%;
-  color: var(--blue-1);
-  position: relative;
-  z-index: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto 0;
-  margin-right: 20px;
-}
-
-.backpack-link__currency svg path {
-  stroke-dasharray: 300;
-  stroke-dashoffset: 300;
-  -webkit-animation: lineAnimShow 0.5s ease-in-out forwards;
-          animation: lineAnimShow 0.5s ease-in-out forwards;
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
-}
-
-.backpack-link__currency-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: -1;
-  -webkit-transition: all ease-in-out 0.4s;
-  transition: all ease-in-out 0.4s;
-}
-
 .backpack-link__img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  width: 95px;
+  width: 137px;
   height: auto;
   position: absolute;
-  bottom: 45%;
+  bottom: 10%;
   right: 0%;
-  z-index: -1;
-  -webkit-transform: rotate(18deg);
-          transform: rotate(18deg);
-  -webkit-transition: all ease-in-out 0.5s;
+  z-index: 2;
   transition: all ease-in-out 0.5s;
   zoom: 1;
   pointer-events: all;
 }
-
 .backpack-link__img img {
   width: 100%;
   height: 100%;
@@ -162,118 +74,62 @@
      object-fit: contain;
   -o-object-position: center;
      object-position: center;
-  -webkit-transition: all ease-in-out 0.5s;
   transition: all ease-in-out 0.5s;
-  -webkit-animation: backpackAnim 2s ease-in-out infinite;
-          animation: backpackAnim 2s ease-in-out infinite;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation: backpackAnim 2s ease-in-out infinite;
+  animation-delay: 1s;
+  animation-play-state: paused;
 }
-
 .backpack-link__arrow {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
-  -webkit-transition-delay: 0.6s;
-          transition-delay: 0.6s;
+  transition-delay: 0.6s;
   margin-right: 10px;
 }
-
 .backpack-link_hide .backpack-link__currency-text {
   opacity: 0;
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
+  transition-delay: 0.3s;
 }
-
 .backpack-link_hide .backpack-link__currency svg path {
-  -webkit-animation: lineAnimHide 0.5s ease-in-out forwards;
-          animation: lineAnimHide 0.5s ease-in-out forwards;
+  animation: lineAnimHide 0.5s ease-in-out forwards;
 }
-
 .backpack-link_hide .backpack-link__title {
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
-  opacity: 0.5;
-  -webkit-transition-delay: 0.5s;
-          transition-delay: 0.5s;
+  transform: translateY(150%);
+  opacity: 0;
+  transition-delay: 0.5s;
 }
-
 .backpack-link_hide .backpack-link__arrow {
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  transform: translateX(100%);
   opacity: 0;
 }
-
 .backpack-link_hide .backpack-link__panel {
-  -webkit-transform: translateY(calc(100% + 75px));
-          transform: translateY(calc(100% + 75px));
-  -webkit-transition-delay: 0.8s;
-          transition-delay: 0.8s;
+  transform: translateY(calc(100% + 75px));
+  transition-delay: 0.8s;
   pointer-events: none;
 }
-
 .backpack-link_hide .backpack-link__img {
-  zoom: 1.3;
+  zoom: 1.1;
   bottom: 0;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-  -webkit-transition-delay: 1s;
-          transition-delay: 1s;
+  transition-delay: 1s;
 }
-
 .backpack-link_hide .backpack-link__img img {
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
+  animation-play-state: running;
 }
-
 .backpack-link_static .backpack-link__currency svg path {
   stroke-dasharray: 0;
   stroke-dashoffset: 0;
 }
 
-@-webkit-keyframes backpackAnim {
-  0% {
-    -webkit-transform: translateY(-5%);
-            transform: translateY(-5%);
-  }
-  50% {
-    -webkit-transform: translateY(5%);
-            transform: translateY(5%);
-  }
-  100% {
-    -webkit-transform: translateY(-5%);
-            transform: translateY(-5%);
-  }
-}
-
 @keyframes backpackAnim {
   0% {
-    -webkit-transform: translateY(-5%);
-            transform: translateY(-5%);
+    transform: translateY(-5%);
   }
   50% {
-    -webkit-transform: translateY(5%);
-            transform: translateY(5%);
+    transform: translateY(5%);
   }
   100% {
-    -webkit-transform: translateY(-5%);
-            transform: translateY(-5%);
+    transform: translateY(-5%);
   }
 }
-
-@-webkit-keyframes lineAnimHide {
-  from {
-    stroke-dashoffset: 0;
-  }
-  to {
-    stroke-dashoffset: 300;
-  }
-}
-
 @keyframes lineAnimHide {
   from {
     stroke-dashoffset: 0;
@@ -282,16 +138,6 @@
     stroke-dashoffset: 300;
   }
 }
-
-@-webkit-keyframes lineAnimShow {
-  from {
-    stroke-dashoffset: 300;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
 @keyframes lineAnimShow {
   from {
     stroke-dashoffset: 300;
@@ -300,53 +146,23 @@
     stroke-dashoffset: 0;
   }
 }
-
 @media screen and (max-width: 570px) {
   .backpack-link {
     bottom: unset;
     top: calc(100svh - 66px - 30px);
   }
   .backpack-link__wrapper {
-    padding-right: 2px;
-  }
-  .backpack-link__panel {
-    padding: 7px;
-    padding-left: 11px;
+    padding-right: 30px;
   }
   .backpack-link__img {
-    width: 60px;
-    right: -2%;
+    width: 80px;
+  }
+  .backpack-link__panel {
+    padding: 12px 15px;
+    padding-right: 55px;
   }
   .backpack-link__title {
-    font-size: 26px;
-    line-height: 100%;
-    margin-right: 11px;
-  }
-  .backpack-link__currency {
-    font-size: 30px;
-    line-height: 100%;
-    margin-right: 16px;
-  }
-  .backpack-link__currency svg {
-    width: 50px;
-    height: 46px;
-  }
-  .backpack-link__arrow {
-    margin-right: 5px;
-  }
-  .backpack-link__arrow svg {
-    width: 22px;
-    height: 22px;
-  }
-  .backpack-link__panel-blur svg path {
-    -webkit-transform: scale(0.655);
-            transform: scale(0.655);
-  }
-  .backpack-link_hide .backpack-link__panel {
-    -webkit-transform: translateY(calc(100% + 275px));
-            transform: translateY(calc(100% + 275px));
-    -webkit-transition-delay: 0.8s;
-            transition-delay: 0.8s;
-    pointer-events: none;
+    font-size: 14px;
+    line-height: 110%;
   }
 }
