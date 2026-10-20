@@ -44,6 +44,7 @@ import ChannelsRedesign from 'components/ChannelsRedesign/ChannelsRedesign';
 import StepsAuthors from 'components/StepsAuthors/StepsAuthors';
 import FormatsAuthors from 'components/FormatsAuthors/FormatsAuthors';
 import NumberAuthors from 'components/NumberAuthors/NumberAuthors';
+import EntranceAuthors from 'components/EntranceAuthors/EntranceAuthors';
 
 
 export default function AllBlocks() {
@@ -140,6 +141,8 @@ export default function AllBlocks() {
             return <FormatsAuthors key={i} block_state={block.block_state} />;
           case 'number_authors':
             return <NumberAuthors key={i} block_state={block.block_state} />;
+          case 'entrance_authors':
+            return <EntranceAuthors key={i} block_state={block.block_state} />;
           default:
             return null;
         }

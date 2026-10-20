@@ -14,6 +14,46 @@
       }
     },
     {
+      "block_slug": "entrance_authors",
+      "block_state": {
+        "title": "<span>зарабатывайте</span> на&nbsp;контенте <br/> в&nbsp;MAX и&nbsp;ВКонтакте",
+        "btn_link": "/app",
+        "btn_text": "Начать продвижение",
+        "slider": [
+          {
+            "img": "/img/entrance-authors/img-1.png",
+            "tag": "Посевы"
+          },
+          {
+            "img": "/img/entrance-authors/img-2.png",
+            "tag": "Шопсы"
+          },
+          {
+            "img": "/img/entrance-authors/img-3.png",
+            "tag": "Контент на&nbsp;заказ"
+          }
+        ],
+        "list": [
+          {
+            "icon": "/img/entrance-authors/icon-1.svg",
+            "text": "Простая регистрация"
+          },
+          {
+            "icon": "/img/entrance-authors/icon-2.svg",
+            "text": "Заработок на посевах"
+          },
+          {
+            "icon": "/img/entrance-authors/icon-3.svg",
+            "text": "Решение о цене за вами"
+          },
+          {
+            "icon": "/img/entrance-authors/icon-4.svg",
+            "text": "Маркировка рекламы на нас"
+          }
+        ]
+      }
+    },
+    {
       "block_slug": "formats_authors",
       "block_state": {
         "title": "Вы решаете, что публиковать",
