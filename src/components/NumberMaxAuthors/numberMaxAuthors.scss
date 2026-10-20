@@ -147,6 +147,7 @@
   .number-max-authors {
     &__wrapper {
       padding: 185px 0 200px;
+      zoom: 1.2;
     }
     &__number {
       font-size: 46px;
@@ -225,6 +226,14 @@
         left: 240px;
         max-width: 100px;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .number-max-authors {
+    &__wrapper {
+      zoom: 1;
     }
   }
 }

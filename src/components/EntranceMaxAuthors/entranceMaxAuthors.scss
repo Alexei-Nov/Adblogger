@@ -1,5 +1,5 @@
 .entrance-max-authors {
-  padding-top: 23px !important;
+  padding-top: 0px;
   &__wrapper {
     display: flex;
     align-items: center;
@@ -108,10 +108,11 @@
 
 @media screen and (max-width: 768px) {
   .entrance-max-authors {
+    padding-top: 23px;
     &__title {
-      font-size: 43px;
+      font-size: 52px;
       line-height: 100%;
-      max-width: 304px;
+      max-width: 370px;
     }
     &__wrapper {
       align-items: flex-start;
@@ -133,6 +134,7 @@
       min-width: 27px;
       width: 27px;
       height: 27px;
+      margin-bottom: -2px;
 
       & img {
         width: 100%;
@@ -173,6 +175,16 @@
       & img {
         object-fit: unset;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .entrance-max-authors {
+    &__title {
+      font-size: 43px;
+      line-height: 100%;
+      max-width: 304px;
     }
   }
 }
