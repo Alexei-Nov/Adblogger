@@ -58,7 +58,7 @@
       "block_state": {
         "title": "Вы решаете, что публиковать",
         "btn_link": "/app",
-        "btn_text": "Начать продвижение",
+        "btn_text": "Начать зарабывать",
         "list": [
           {
             "name": "Контент на&nbsp;заказ",
@@ -159,20 +159,20 @@
         ],
         "cards_list": [
           {
-            "img": "./img/shops-steps-2/img-1.png",
-            "img_mob": "./img/shops-steps-2/img-1_mob.png",
+            "img": "/img/shops-steps-2/img-1.png",
+            "img_mob": "/img/shops-steps-2/img-1_mob.png",
             "name": "Зарегистрируйтесь как&nbsp;автор",
             "desc": "Подключите страницу или канал и укажите  данные для выплат"
           },
           {
-            "img": "./img/shops-steps-2/img-2.png",
-            "img_mob": "./img/shops-steps-2/img-2_mob.png",
+            "img": "/img/shops-steps-2/img-2.png",
+            "img_mob": "/img/shops-steps-2/img-2_mob.png",
             "name": "Берите заявки на рекламу",
             "desc": "Снимайте контент с товарами или получайте заявки от рекламодателей"
           },
           {
-            "img": "./img/shops-steps-2/img-3.png",
-            "img_mob": "./img/shops-steps-2/img-3_mob.png",
+            "img": "/img/shops-steps-2/img-3.png",
+            "img_mob": "/img/shops-steps-2/img-3_mob.png",
             "name": "Начинайте </br> зарабатывать",
             "desc": "Получайте деньги за рекламу и выводите их на свой счёт"
           }
