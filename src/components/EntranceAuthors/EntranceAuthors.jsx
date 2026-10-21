@@ -33,8 +33,8 @@ export default function EntranceAuthors({ block_state }) {
                 })}
               </div>
               <h1 className="entrance-authors__title" dangerouslySetInnerHTML={{ __html: block_state.title }}></h1>
-              <a href={btnState.link} className="entrance-authors__btn btn btn_border btn_rounded fw-500 text-26" >
-                {btnState.text}
+              <a href={block_state.btn_link} className="entrance-authors__btn btn btn_border btn_rounded fw-500 text-26" >
+                {block_state.btn_text}
               </a>
             </div>
             <div className="entrance-authors__media">

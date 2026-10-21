@@ -18,7 +18,7 @@
       "block_state": {
         "title": "<span>зарабатывайте</span> на&nbsp;контенте <br/> в&nbsp;MAX и&nbsp;ВКонтакте",
         "btn_link": "/app",
-        "btn_text": "Начать продвижение",
+        "btn_text": "Начать зарабатывать",
         "slider": [
           {
             "img": "/img/entrance-authors/img-1.png",
@@ -74,7 +74,7 @@
           },
           {
             "name": "Посевы",
-            "desc": "Размещайте готовые креативы на площадках авторов",
+            "desc": "Публикуйте </br> готовые посты от рекламодателей",
             "label": "Где доступно",
             "img": "/img/formats-authors/img-1.png",
             "socials": [
