@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 import 'swiper/css';
 import "swiper/css/pagination";
@@ -9,9 +9,21 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 export default function FormatsAuthors({ block_state }) {
   let swiper = useRef();
+  const [activeCard, setActiveCard] = useState(1)
 
   useEffect(() => {
     swiper.current.swiper.slideTo(1)
+
+    const handleResize = () => {
+      if (!swiper.current?.swiper) return
+
+      if (window.innerWidth < 570) {
+        swiper.current.swiper.destroy(true, true)
+      }
+    }
+
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
   }, [])
 
   return (
@@ -51,7 +63,7 @@ export default function FormatsAuthors({ block_state }) {
           {block_state.list.map((card, i) => {
             return (
               <SwiperSlide key={i} className='formats-authors__slide'>
-                <FormatsAuthorsCard card={card} />
+                <FormatsAuthorsCard card={card} index={i} activeCard={activeCard} setActiveCard={setActiveCard} />
               </SwiperSlide>
             )
           })}
@@ -93,25 +105,57 @@ export default function FormatsAuthors({ block_state }) {
   )
 }
 
-function FormatsAuthorsCard({ card }) {
+function FormatsAuthorsCard({ card, index, activeCard, setActiveCard }) {
+  function handleClick(index) {
+    let newIndex = index
+    if (activeCard === index) {
+      newIndex = ''
+    }
+    setActiveCard(newIndex)
+  }
   return (
-    <div className="formats-authors-card">
-      <div className="formats-authors-card__body">
-        <div className="formats-authors-card__title text-35 fw-500" dangerouslySetInnerHTML={{ __html: card.name }}></div>
-        <div className="formats-authors-card__desc text-24" dangerouslySetInnerHTML={{ __html: card.desc }}></div>
-        <div className="formats-authors-card__label text-22" dangerouslySetInnerHTML={{ __html: card.label }}></div>
-        <div className="formats-authors-card__socials">
-          {card.socials.map((social, j) => {
-            return (
-              <a href={social.link} target='_blank' className="formats-authors-card__social" key={j}>
-                <img src={social.icon} alt="icon" />
-              </a>
-            )
-          })}
+    <div className={"formats-authors-card " + (activeCard === index ? ' formats-authors-card_active ' : '')}>
+      <div className="formats-authors-card__btn" onClick={() => handleClick(index)}>
+        <div className="formats-authors-card__btn-text">
+          <div className="formats-authors-card__title text-35 fw-500" dangerouslySetInnerHTML={{ __html: card.name }}></div>
+        </div>
+        <div className="formats-authors-card__btn-caret">
+          <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <circle cx="14" cy="14" r="14" transform="rotate(90 14 14)" fill="url(#paint0_linear_11241_37925)" />
+            <use xlink:href="#stroke0_11241_37925" fill="black" />
+            <mask id="stroke1_11241_37925" fill="white">
+              <use xlink:href="#stroke0_11241_37925" />
+            </mask>
+            <path d="M18.5247 11.7082C18.8625 11.3902 19.3942 11.4063 19.7121 11.7441C20.0301 12.082 20.014 12.6136 19.6761 12.9315L14.5761 17.7315C14.2527 18.0359 13.7482 18.0359 13.4247 17.7315L8.32472 12.9315C7.98689 12.6136 7.97079 12.082 8.28874 11.7441C8.60669 11.4063 9.13831 11.3902 9.47613 11.7082L14.0004 15.9663L18.5247 11.7082Z" strokeWidth="0.127273" stroke="white" mask="url(#stroke1_11241_37925)" />
+            <defs>
+              <linearGradient id="paint0_linear_11241_37925" x1="19.712" y1="-1.81996" x2="44.2306" y2="28.4382" gradientUnits="userSpaceOnUse">
+                <stop stopColor="#CDFBFF" />
+                <stop offset="1" stopColor="#00D3E6" />
+              </linearGradient>
+              <path id="stroke0_11241_37925" d="M19.7121 11.7441C19.3942 11.4063 18.8625 11.3902 18.5247 11.7082L14.0004 15.9663L9.47613 11.7082C9.13831 11.3902 8.60669 11.4063 8.28874 11.7441C7.97079 12.082 7.98689 12.6136 8.32472 12.9315L13.4247 17.7315C13.7482 18.0359 14.2527 18.0359 14.5761 17.7315L19.6761 12.9315C20.014 12.6136 20.0301 12.082 19.7121 11.7441Z" fillRule="evenodd" clipRule="evenodd" />
+            </defs>
+          </svg>
         </div>
       </div>
-      <div className="formats-authors-card__img">
-        <img src={card.img} alt="img" />
+      <div className="formats-authors-card__panel">
+        <div className="formats-authors-card__wrapper">
+          <div className="formats-authors-card__body">
+            <div className="formats-authors-card__desc text-24" dangerouslySetInnerHTML={{ __html: card.desc }}></div>
+            <div className="formats-authors-card__label text-22" dangerouslySetInnerHTML={{ __html: card.label }}></div>
+            <div className="formats-authors-card__socials">
+              {card.socials.map((social, j) => {
+                return (
+                  <a href={social.link} target='_blank' className="formats-authors-card__social" key={j}>
+                    <img src={social.icon} alt="icon" />
+                  </a>
+                )
+              })}
+            </div>
+          </div>
+          <div className="formats-authors-card__img">
+            <img src={card.img} alt="img" />
+          </div>
+        </div>
       </div>
     </div>
   )

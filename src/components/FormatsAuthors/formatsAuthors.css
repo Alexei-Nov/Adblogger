@@ -34,22 +34,24 @@
 }
 
 .formats-authors-card {
-  display: flex;
-  width: 100%;
-  height: 100%;
   background-color: var(--black-2);
   border-radius: 16px;
   overflow: hidden;
+  padding: 27px 37px 37px;
+}
+.formats-authors-card__wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
   justify-content: space-between;
 }
 .formats-authors-card__body {
   display: flex;
   flex-direction: column;
   height: auto;
-  padding: 27px 37px 37px;
   padding-right: 0;
   width: 100%;
-  max-width: 320px;
+  max-width: 310px;
 }
 .formats-authors-card__img {
   display: flex;
@@ -57,6 +59,9 @@
   width: -moz-fit-content;
   width: fit-content;
   max-width: 300px;
+  margin-bottom: -37px;
+  margin-right: -37px;
+  margin-top: -100px;
 }
 .formats-authors-card__img img {
   width: 100%;
@@ -67,8 +72,10 @@
   -o-object-position: bottom;
      object-position: bottom;
 }
-.formats-authors-card__title {
+.formats-authors-card__btn {
   margin-bottom: 35px;
+}
+.formats-authors-card__title {
   background: linear-gradient(90deg, #cdfbff 0%, #00d3e6 49.27%);
   -webkit-background-clip: text;
           background-clip: text;
@@ -76,6 +83,7 @@
 }
 .formats-authors-card__desc {
   margin-bottom: 25px;
+  max-width: 290px;
 }
 .formats-authors-card__label {
   margin-top: auto;
@@ -99,12 +107,15 @@
   -o-object-position: center;
      object-position: center;
 }
-
-@media screen and (max-width: 1200px) {
-  .formats-authors__wrapper {
-    flex-direction: column;
-  }
+.formats-authors-card__btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+.formats-authors-card__btn-caret {
+  display: none;
+}
+
 @media screen and (max-width: 570px) {
   .formats-authors__title {
     margin-bottom: 23px;
@@ -117,13 +128,31 @@
   .formats-authors__wrapper {
     gap: 10px;
   }
+  .formats-authors__controls {
+    display: none;
+  }
+  .formats-authors__slider {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .formats-authors__slide:nth-child(n) {
+    transform: none !important;
+  }
+  .formats-authors__slide:nth-child(2) {
+    order: -1;
+  }
+  .formats-authors .swiper-wrapper {
+    display: contents;
+  }
+  .formats-authors-card {
+    padding: 12px 16px;
+    border-radius: 9px;
+  }
   .formats-authors-card__body {
-    padding: 16px;
-    padding-right: 0;
     max-width: 180px;
   }
   .formats-authors-card__title {
-    margin-bottom: 14px;
     font-size: 20px;
     line-height: 120%;
   }
@@ -146,5 +175,31 @@
   .formats-authors-card__img {
     width: 100%;
     max-width: 145px;
+    margin-bottom: -16px;
+    margin-right: -16px;
+    margin-top: -40px;
+  }
+  .formats-authors-card__btn-caret {
+    display: flex;
+    transition: all ease 0.5s;
+  }
+  .formats-authors-card__btn {
+    margin-bottom: 0px;
+  }
+  .formats-authors-card__panel {
+    overflow: hidden;
+    transition: all ease 0.5s;
+    max-height: 0;
+  }
+  .formats-authors-card__wrapper {
+    padding: 16px;
+    margin: 0 -16px -16px;
+    width: auto;
+  }
+  .formats-authors-card_active .formats-authors-card__panel {
+    max-height: 300px;
+  }
+  .formats-authors-card_active .formats-authors-card__btn-caret {
+    transform: rotate(180deg);
   }
 }
