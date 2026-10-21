@@ -2,10 +2,16 @@
   margin-bottom: 0 !important;
 }
 .number-authors__label {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
   color: rgba(143, 143, 143, 0.7294117647);
   text-align: center;
   margin: 0 auto;
   margin-top: 40px;
+}
+.number-authors__label:hover {
+  text-decoration: underline;
 }
 .number-authors__body {
   font-family: "VK Sans Display Expanded";

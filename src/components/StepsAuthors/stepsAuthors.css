@@ -1,18 +1,18 @@
 .steps-authors__wrapper {
   display: flex;
-  gap: 34px;
+  gap: 22px;
 }
 .steps-authors__title {
   margin-bottom: 60px;
 }
 .steps-authors__body {
-  padding: 32px;
+  padding: 26px;
   background-color: #202020;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 350px;
+  max-width: 314px;
   position: relative;
 }
 .steps-authors__subtitle {

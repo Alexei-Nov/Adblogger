@@ -3,10 +3,16 @@
     margin-bottom: 0 !important;
   }
   &__label {
+    display: flex;
+    width: fit-content;
     color: #8f8f8fba;
     text-align: center;
     margin: 0 auto;
     margin-top: 40px;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
   &__body {
     font-family: "VK Sans Display Expanded";

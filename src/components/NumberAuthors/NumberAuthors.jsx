@@ -31,7 +31,7 @@ export default function NumberAuthors({ block_state }) {
       ease: 'power1.in',
       snap: { textContent: 0.1 },
       onUpdate: function () {
-        this.targets()[0].textContent = (+this.targets()[0].textContent).toFixed(1)
+        this.targets()[0].textContent = (+this.targets()[0].textContent).toFixed(1).replace('.', ',')
       },
     }, 0)
     tl.fromTo(heading, {
@@ -63,7 +63,7 @@ export default function NumberAuthors({ block_state }) {
 
         <div className="number-authors__wrapper">
           <div className="number-authors__body">
-            <div className="number-authors__number">0.1</div>
+            <div className="number-authors__number">0,1</div>
             <div className="number-authors__number-text" dangerouslySetInnerHTML={{ __html: block_state.number_text }}></div>
           </div>
           <div className="number-authors__authors">
@@ -77,7 +77,7 @@ export default function NumberAuthors({ block_state }) {
           </div>
         </div>
 
-        <div className="number-authors__label text-24 fw-500" dangerouslySetInnerHTML={{ __html: block_state.label }} />
+        <a href='https://vk.company/ru/press/releases/12423/' target='_blank' className="number-authors__label text-24 fw-500" dangerouslySetInnerHTML={{ __html: block_state.label }} />
       </div>
     </section>
   )

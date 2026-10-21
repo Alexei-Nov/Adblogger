@@ -62,12 +62,12 @@
         "list": [
           {
             "name": "Контент на&nbsp;заказ",
-            "desc": "Заказывайте авторские интеграции по своему брифу",
+            "desc": "Создавайте посты и клипы по брифу от рекламодателя",
             "label": "Где доступно",
             "img": "/img/formats-authors/img-2.png",
             "socials": [
               {
-                "icon": "/img/formats-authors/icon-1.svg",
+                "icon": "/img/formats-authors/icon-2.svg",
                 "link": "#link"
               }
             ]
@@ -95,7 +95,7 @@
             "img": "/img/formats-authors/img-3.png",
             "socials": [
               {
-                "icon": "/img/formats-authors/icon-1.svg",
+                "icon": "/img/formats-authors/icon-2.svg",
                 "link": "#link"
               }
             ]
@@ -182,36 +182,36 @@
     {
       "block_slug": "channels_redesign",
       "block_state": {
-        "title": "Выбирайте авторов под&nbsp;свои задачи",
-        "label": "Средний CPM по&nbsp;тематике*",
+        "title": "125 000 авторов уже с VK AdBlogger",
+        "label": "зарабатывают в месяц авторы этой тематики",
         "tags": [
           {
             "name": "Лайфстайл",
-            "money": "46&nbsp;₽",
+            "money": "~45 000 ₽",
             "img_bg": "/img/channels-redesign/panel-bg-1.png",
             "img_bg_mob": "/img/channels-redesign/panel-bg-1_mob.png"
           },
           {
             "name": "Бьюти",
-            "money": "44&nbsp;₽",
+            "money": "~63 000 ₽",
             "img_bg": "/img/channels-redesign/panel-bg-2.png",
             "img_bg_mob": "/img/channels-redesign/panel-bg-2_mob.png"
           },
           {
             "name": "Стиль",
-            "money": "75&nbsp;₽",
+            "money": "~144 000 ₽",
             "img_bg": "/img/channels-redesign/panel-bg-3.png",
             "img_bg_mob": "/img/channels-redesign/panel-bg-3_mob.png"
           },
           {
             "name": "Путешествия",
-            "money": "71&nbsp;₽",
+            "money": "~23 000 ₽",
             "img_bg": "/img/channels-redesign/panel-bg-4.png",
             "img_bg_mob": "/img/channels-redesign/panel-bg-4_mob.png"
           },
           {
             "name": "Кулинария",
-            "money": "42&nbsp;₽",
+            "money": "~45 000 ₽",
             "img_bg": "/img/channels-redesign/panel-bg-5.png",
             "img_bg_mob": "/img/channels-redesign/panel-bg-5_mob.png"
           }
