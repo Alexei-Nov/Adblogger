@@ -150,7 +150,7 @@
 }
 @media screen and (max-width: 570px) {
   .entrance-max-authors__btn {
-    margin-top: 0px;
+    margin-top: 15px;
   }
   .entrance-max-authors__media {
     transform: translateX(0px);
@@ -164,7 +164,9 @@
     transform: translateX(50px);
   }
   .entrance-max-authors__bg {
+    top: 52%;
     right: 0;
+    height: 95%;
     width: 95%;
   }
   .entrance-max-authors__bg img {

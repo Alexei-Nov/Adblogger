@@ -153,7 +153,7 @@
 @media screen and (max-width: 570px) {
   .entrance-max-authors {
     &__btn {
-      margin-top: 0px;
+      margin-top: 15px;
     }
     &__media {
       transform: translateX(0px);
@@ -168,8 +168,9 @@
       transform: translateX(50px);
     }
     &__bg {
+      top: 52%;
       right: 0;
-      // height: 98%;
+      height: 95%;
       width: 95%;
 
       & img {
