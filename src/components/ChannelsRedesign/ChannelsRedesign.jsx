@@ -7,18 +7,24 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 export default function ChannelsRedesign({ block_state }) {
   const swiper = useRef();
+  const swiperTags = useRef();
   const [chanellsTag, setChanellsTag] = useState(0);
 
   function filterChannels(index) {
-    if (chanellsTag !== index) {
-      setChanellsTag(index);
-      swiper.current.swiper.update();
-    }
+    const count = block_state.tags.length;
+    const nextIndex = (index + count) % count;
+
+    setChanellsTag(nextIndex);
+    swiper.current.swiper.slideToLoop(2);
   }
 
   const resultChannelsArr = block_state.channels.filter((channel) =>
     channel.tags.includes(block_state.tags[chanellsTag].name)
   );
+
+  useEffect(() => {
+    swiper.current.swiper.slideToLoop(2)
+  }, [])
 
   return (
     <>
@@ -31,6 +37,7 @@ export default function ChannelsRedesign({ block_state }) {
           <div className="channels-redesign__wrapper">
             <div className="channels-redesign__tags text-20 fw-500">
               <Swiper className='channels-redesign__slider-tags'
+                ref={swiperTags}
                 modules={[Navigation]}
                 spaceBetween={0}
                 speed={800}
@@ -38,13 +45,14 @@ export default function ChannelsRedesign({ block_state }) {
                   prevEl: '.channels-redesign__prev-tags',
                   nextEl: '.channels-redesign__next-tags',
                 }}
+                loop={true}
                 slidesPerView='auto'
                 centeredSlides={true}
                 allowTouchMove={false}
               >
                 {block_state.tags.map((tag, index) => {
                   return (
-                    <SwiperSlide key={index} className='channels-redesign__slide-tag'>
+                    <SwiperSlide key={index} className={'channels-redesign__slide-tag ' + index}>
                       <div
                         className={"channels-redesign__tag btn btn_rounded btn_transparent" + (chanellsTag === index ? ' channels-redesign__tag_active' : '')}
                         onClick={() => { filterChannels(index) }}

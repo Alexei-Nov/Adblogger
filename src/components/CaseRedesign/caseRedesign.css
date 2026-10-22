@@ -50,7 +50,8 @@
      object-position: top;
 }
 .case-redesign__bottom {
-  margin-top: auto;
+  margin-bottom: auto;
+  order: -1;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -107,7 +108,6 @@
   min-width: 350px;
   padding: 15px;
 }
-
 @media screen and (max-width: 1024px) and (min-width: 700px) {
   .case-redesign__slide.swiper-slide-next {
     opacity: 1;

@@ -50,7 +50,9 @@
     }
   }
   &__bottom {
-    margin-top: auto;
+    // margin-top: auto;
+    margin-bottom: auto;
+    order: -1;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -106,6 +108,9 @@
     margin-top: 55px;
     min-width: 350px;
     padding: 15px;
+  }
+  &__name {
+    // max-width: 320px;
   }
 }
 

@@ -73,7 +73,7 @@ export default function CaseRedesign({ block_state }) {
               return (
                 <SwiperSlide key={i} className='case-redesign__slide'>
                   <a href={'/top-cases/' + caseItem.slug} className='case-redesign__slide-wrapper'>
-                    <div className="case-redesign__name text-32 fw-500" dangerouslySetInnerHTML={{ __html: caseItem.desc }}></div>
+                    <div className="case-redesign__name text-30 fw-500" dangerouslySetInnerHTML={{ __html: caseItem.desc }}></div>
                     <div className="case-redesign__bottom">
                       <div className="case-redesign__icon">
                         {caseItem.logo &&

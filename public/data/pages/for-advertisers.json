@@ -110,6 +110,24 @@
         ],
         "channels": [
           {
+            "name": "Аня Абрамова",
+            "photoPath": "/img/channels-redesign/lifestyle-9.png",
+            "desc": "О семье, материнстве <br>и&nbsp;полезных покупках",
+            "subscribers": "234K&nbsp;подписчиков",
+            "tags": [
+              "Лайфстайл"
+            ]
+          },
+          {
+            "name": "Настя Рыжик",
+            "photoPath": "/img/channels-redesign/lifestyle-10.png",
+            "desc": "Хитрая лиса, блогер <br>и&nbsp;артистка",
+            "subscribers": "317K&nbsp;подписчиков",
+            "tags": [
+              "Лайфстайл"
+            ]
+          },
+          {
             "name": "У бабы Даши",
             "photoPath": "/img/channels-redesign/lifestyle-1.png",
             "desc": "Женские советы, бьюти <br>и&nbsp;юмор",
@@ -140,7 +158,7 @@
             "name": "KAHOME_DESIGN",
             "photoPath": "/img/channels-redesign/lifestyle-4.png",
             "desc": "Идеи для обустройства <br>уютного дома",
-            "subscribers": "39hK&nbsp;подписчиков",
+            "subscribers": "39K&nbsp;подписчиков",
             "tags": [
               "Лайфстайл"
             ]
@@ -177,24 +195,6 @@
             "photoPath": "/img/channels-redesign/lifestyle-8.png",
             "desc": "Королева лайфхаков",
             "subscribers": "99K&nbsp;подписчиков",
-            "tags": [
-              "Лайфстайл"
-            ]
-          },
-          {
-            "name": "Аня Абрамова",
-            "photoPath": "/img/channels-redesign/lifestyle-9.png",
-            "desc": "О семье, материнстве <br>и&nbsp;полезных покупках",
-            "subscribers": "234K&nbsp;подписчиков",
-            "tags": [
-              "Лайфстайл"
-            ]
-          },
-          {
-            "name": "Настя Рыжик",
-            "photoPath": "/img/channels-redesign/lifestyle-10.png",
-            "desc": "Хитрая лиса, блогер <br>и&nbsp;артистка",
-            "subscribers": "317K&nbsp;подписчиков",
             "tags": [
               "Лайфстайл"
             ]
