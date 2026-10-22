@@ -15,7 +15,6 @@ export default function ChannelsRedesign({ block_state }) {
     const nextIndex = (index + count) % count;
 
     setChanellsTag(nextIndex);
-    swiper.current.swiper.slideToLoop(2);
   }
 
   const resultChannelsArr = block_state.channels.filter((channel) =>
