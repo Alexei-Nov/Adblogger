@@ -168,10 +168,10 @@ export default function ChannelsRedesign({ block_state }) {
                 </div>
                 <div className="channels-redesign__next channels-redesign__navigation-btn slider-next">
                   <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="48.2755" height="48.2755" rx="24.1377" transform="matrix(1 0 0 -1 0 48.2755)" fill="url(#paint0_linear_11085_57662)" />
-                    <path fillRule="evenodd" clipRule="evenodd" d="M20.2143 33.6404C19.6318 33.0922 19.604 32.1756 20.1522 31.5932L27.4938 23.7927L20.1522 15.9923C19.604 15.4098 19.6318 14.4933 20.2143 13.9451C20.7967 13.3969 21.7133 13.4246 22.2615 14.0071L30.5373 22.8001C31.0621 23.3578 31.0621 24.2277 30.5373 24.7853L22.2615 33.5784C21.7133 34.1608 20.7967 34.1886 20.2143 33.6404Z" fill="black" />
+                    <rect width="48.2755" height="48.2755" rx="24.1377" transform="matrix(1 0 0 -1 0 48.2755)" fill="url(#paint0_linear_11683_3490)" />
+                    <path d="M20.2143 33.6405C19.6318 33.0923 19.604 32.1758 20.1522 31.5933L27.4938 23.7929L20.1522 15.9924C19.604 15.41 19.6318 14.4934 20.2143 13.9452C20.7967 13.397 21.7133 13.4248 22.2615 14.0073L30.5373 22.8003C31.0621 23.3579 31.0621 24.2278 30.5373 24.7855L22.2615 33.5785C21.7133 34.161 20.7967 34.1887 20.2143 33.6405Z" fillRule="evenodd" clipRule="evenodd" fill="black" />
                     <defs>
-                      <linearGradient id="paint0_linear_11085_57662" x1="24.1377" y1="0" x2="24.1377" y2="48.2755" gradientUnits="userSpaceOnUse">
+                      <linearGradient id="paint0_linear_11683_3490" x1="24.1377" y1="0" x2="24.1377" y2="48.2755" gradientUnits="userSpaceOnUse">
                         <stop stopColor="#CDFBFF" />
                         <stop offset="1" stopColor="#00EAFF" />
                       </linearGradient>

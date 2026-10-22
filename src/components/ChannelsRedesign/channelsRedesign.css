@@ -78,6 +78,11 @@
 .channels-redesign__prev {
   opacity: 0;
   pointer-events: none;
+  background: linear-gradient(0deg, #cdfbff 0%, #00eaff 100%);
+}
+.channels-redesign__next {
+  margin-left: auto;
+  background: linear-gradient(0deg, #cdfbff 0%, #00eaff 100%);
 }
 .channels-redesign__tags {
   display: flex;

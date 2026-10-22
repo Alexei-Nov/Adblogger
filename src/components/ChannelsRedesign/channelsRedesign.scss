@@ -81,6 +81,11 @@
   &__prev {
     opacity: 0;
     pointer-events: none;
+    background: linear-gradient(0deg, #cdfbff 0%, #00eaff 100%);
+  }
+  &__next {
+    margin-left: auto;
+    background: linear-gradient(0deg, #cdfbff 0%, #00eaff 100%);
   }
   &__tags {
     display: flex;

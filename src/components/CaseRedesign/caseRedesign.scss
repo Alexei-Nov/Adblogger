@@ -87,6 +87,10 @@
   }
   &__next {
     margin-left: auto;
+    background: linear-gradient(0deg, #cdfbff 0%, #00eaff 100%);
+  }
+  &__prev {
+    background: linear-gradient(0deg, #cdfbff 0%, #00eaff 100%);
   }
   &__slide-wrapper {
     display: flex;

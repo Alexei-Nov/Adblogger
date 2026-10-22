@@ -87,6 +87,10 @@
 }
 .case-redesign__next {
   margin-left: auto;
+  background: linear-gradient(0deg, #cdfbff 0%, #00eaff 100%);
+}
+.case-redesign__prev {
+  background: linear-gradient(0deg, #cdfbff 0%, #00eaff 100%);
 }
 .case-redesign__slide-wrapper {
   display: flex;

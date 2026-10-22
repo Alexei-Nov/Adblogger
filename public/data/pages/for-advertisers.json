@@ -112,7 +112,7 @@
           {
             "name": "У бабы Даши",
             "photoPath": "/img/channels-redesign/lifestyle-1.png",
-            "desc": "Женские советы, бьюти и&nbsp;юмор",
+            "desc": "Женские советы, бьюти <br>и&nbsp;юмор",
             "subscribers": "86K&nbsp;подписчиков",
             "tags": [
               "Лайфстайл"
@@ -130,7 +130,7 @@
           {
             "name": "TARNOVITA",
             "photoPath": "/img/channels-redesign/lifestyle-3.png",
-            "desc": "Семья, рецепты и&nbsp;бьюти-ритуалы",
+            "desc": "Семья, рецепты <br>и&nbsp;бьюти-ритуалы",
             "subscribers": "128K&nbsp;подписчиков",
             "tags": [
               "Лайфстайл"
@@ -139,7 +139,7 @@
           {
             "name": "KAHOME_DESIGN",
             "photoPath": "/img/channels-redesign/lifestyle-4.png",
-            "desc": "Идеи для обустройства уютного дома",
+            "desc": "Идеи для обустройства <br>уютного дома",
             "subscribers": "39hK&nbsp;подписчиков",
             "tags": [
               "Лайфстайл"
@@ -157,7 +157,7 @@
           {
             "name": "Козина Мария",
             "photoPath": "/img/channels-redesign/lifestyle-6.png",
-            "desc": "Полезные находки для дома и&nbsp;большой семьи",
+            "desc": "Полезные находки для дома <br>и&nbsp;большой семьи",
             "subscribers": "110K&nbsp;подписчиков",
             "tags": [
               "Лайфстайл"
@@ -166,7 +166,7 @@
           {
             "name": "TWIXI",
             "photoPath": "/img/channels-redesign/lifestyle-7.png",
-            "desc": "Про блогинг и&nbsp;юмор от&nbsp;близняшек",
+            "desc": "Про блогинг и&nbsp;юмор <br>от&nbsp;близняшек",
             "subscribers": "240K&nbsp;подписчиков",
             "tags": [
               "Лайфстайл"
@@ -184,7 +184,7 @@
           {
             "name": "Аня Абрамова",
             "photoPath": "/img/channels-redesign/lifestyle-9.png",
-            "desc": "О семье, материнстве и&nbsp;полезных покупках",
+            "desc": "О семье, материнстве <br>и&nbsp;полезных покупках",
             "subscribers": "234K&nbsp;подписчиков",
             "tags": [
               "Лайфстайл"
@@ -193,7 +193,7 @@
           {
             "name": "Настя Рыжик",
             "photoPath": "/img/channels-redesign/lifestyle-10.png",
-            "desc": "Хитрая лиса, блогер и&nbsp;артистка",
+            "desc": "Хитрая лиса, блогер <br>и&nbsp;артистка",
             "subscribers": "317K&nbsp;подписчиков",
             "tags": [
               "Лайфстайл"
@@ -202,7 +202,7 @@
           {
             "name": "Елена Юлкина",
             "photoPath": "/img/channels-redesign/beauty-1.png",
-            "desc": "Всё, что нужно знать женщине о макияже",
+            "desc": "Всё, что нужно знать <br>женщине о макияже",
             "subscribers": "235К подписчиков",
             "tags": [
               "Бьюти"
@@ -211,7 +211,7 @@
           {
             "name": "Алла Смирнова",
             "photoPath": "/img/channels-redesign/beauty-2.png",
-            "desc": "Художник по гриму, визажист и&nbsp;гораздо больше",
+            "desc": "Художник по гриму, визажист <br>и&nbsp;гораздо больше",
             "subscribers": "56К подписчиков",
             "tags": [
               "Бьюти"
@@ -220,7 +220,7 @@
           {
             "name": "Яркий Nail блогер - Алёна Лаврентьева",
             "photoPath": "/img/channels-redesign/beauty-3.png",
-            "desc": "Настоящий эксперт в&nbsp;ногтевом сервисе",
+            "desc": "Настоящий эксперт <br>в&nbsp;ногтевом сервисе",
             "subscribers": "78К подписчиков",
             "tags": [
               "Бьюти"
@@ -229,7 +229,7 @@
           {
             "name": "Tina Bukreeva",
             "photoPath": "/img/channels-redesign/beauty-4.png",
-            "desc": "Бьюти-лайфхаки от&nbsp;профи мейк-апа",
+            "desc": "Бьюти-лайфхаки <br>от&nbsp;профи мейк-апа",
             "subscribers": "60К подписчиков",
             "tags": [
               "Бьюти"
@@ -247,7 +247,7 @@
           {
             "name": "Визажист и&nbsp;бьютиголик | Рассадина Ирина",
             "photoPath": "/img/channels-redesign/beauty-6.png",
-            "desc": "Уроки макияжа – от&nbsp;базовых техник до&nbsp;трендов",
+            "desc": "Уроки макияжа – от&nbsp;базовых <br>техник до&nbsp;трендов",
             "subscribers": "92К подписчиков",
             "tags": [
               "Бьюти"
@@ -256,7 +256,7 @@
           {
             "name": "Бьютюхины секретики | Бьюти Блог",
             "photoPath": "/img/channels-redesign/beauty-7.png",
-            "desc": "Превращает свою реальность в&nbsp;увлекательное приключение",
+            "desc": "Превращает свою реальность <br>в&nbsp;увлекательное приключение",
             "subscribers": "86К подписчиков",
             "tags": [
               "Бьюти"
@@ -265,7 +265,7 @@
           {
             "name": "Лена Князева • бьютиПОДРУЖКА",
             "photoPath": "/img/channels-redesign/beauty-8.png",
-            "desc": "Вдохновение, советы и&nbsp;секреты бьюти-рутины",
+            "desc": "Вдохновение, советы <br>и&nbsp;секреты бьюти-рутины",
             "subscribers": "65К подписчиков",
             "tags": [
               "Бьюти"
@@ -274,7 +274,7 @@
           {
             "name": "Ольга Уход За&nbsp;Собой 40+",
             "photoPath": "/img/channels-redesign/beauty-9.png",
-            "desc": "Как легко ухаживать за&nbsp;собой в&nbsp;40+",
+            "desc": "Как легко ухаживать <br>за&nbsp;собой в&nbsp;40+",
             "subscribers": "46К подписчиков",
             "tags": [
               "Бьюти"
@@ -283,7 +283,7 @@
           {
             "name": "Алиса в&nbsp;стране бьюти",
             "photoPath": "/img/channels-redesign/beauty-10.png",
-            "desc": "Твой проводник в&nbsp;страну бьюти",
+            "desc": "Твой проводник <br>в&nbsp;страну бьюти",
             "subscribers": "69К подписчиков",
             "tags": [
               "Бьюти"
@@ -301,7 +301,7 @@
           {
             "name": "Академия Леди",
             "photoPath": "/img/channels-redesign/style-2.png",
-            "desc": "Медиа о&nbsp;благородном воспитании и&nbsp;этикете",
+            "desc": "Медиа о&nbsp;благородном <br>воспитании и&nbsp;этикете",
             "subscribers": "243К подписчиков",
             "tags": [
               "Стиль"
@@ -310,7 +310,7 @@
           {
             "name": "Разговоры с&nbsp;Ириной Муромцевой",
             "photoPath": "/img/channels-redesign/style-3.png",
-            "desc": "Про здоровье, красоту и&nbsp;саморазвитие",
+            "desc": "Про здоровье, красоту <br>и&nbsp;саморазвитие",
             "subscribers": "201К подписчиков",
             "tags": [
               "Стиль"
@@ -337,7 +337,7 @@
           {
             "name": "Стилист Ольга Делевски",
             "photoPath": "/img/channels-redesign/style-6.png",
-            "desc": "Вдохновляет на&nbsp;модные эксперименты",
+            "desc": "Вдохновляет на&nbsp;модные <br>эксперименты",
             "subscribers": "930К подписчиков",
             "tags": [
               "Стиль"
@@ -364,7 +364,7 @@
           {
             "name": "Стилист Мария Шеди",
             "photoPath": "/img/channels-redesign/style-9.png",
-            "desc": "Научит выглядеть дорого и&nbsp;стильно при&nbsp;небольших затратах",
+            "desc": "Научит выглядеть дорого <br>и&nbsp;стильно при&nbsp;небольших затратах",
             "subscribers": "140К подписчиков",
             "tags": [
               "Стиль"
@@ -382,7 +382,7 @@
           {
             "name": "Zmievskie | Рецепты",
             "photoPath": "/img/channels-redesign/cooking-1.png",
-            "desc": "Здесь каждый рецепт со&nbsp;своим характером",
+            "desc": "Здесь каждый рецепт <br>со&nbsp;своим характером",
             "subscribers": "1М подписчиков",
             "tags": [
               "Кулинария"
@@ -391,7 +391,7 @@
           {
             "name": "Just Cook",
             "photoPath": "/img/channels-redesign/cooking-2.png",
-            "desc": "Тысячи проверенных рецептов на&nbsp;любой вкус и&nbsp;бюджет",
+            "desc": "Тысячи проверенных рецептов <br>на&nbsp;любой вкус и&nbsp;бюджет",
             "subscribers": "1,7М подписчиков",
             "tags": [
               "Кулинария"
@@ -400,7 +400,7 @@
           {
             "name": "Саша Белькович РЕЦЕПТЫ / ПРОСТО КУХНЯ",
             "photoPath": "/img/channels-redesign/cooking-3.png",
-            "desc": "Блюда ресторанного уровня",
+            "desc": "Блюда ресторанного <br>уровня",
             "subscribers": "1,3М подписчиков",
             "tags": [
               "Кулинария"
@@ -409,7 +409,7 @@
           {
             "name": "Рецепты | Сабина Сарыева",
             "photoPath": "/img/channels-redesign/cooking-4.png",
-            "desc": "Как готовить вкусно, просто и &nbsp;быстро",
+            "desc": "Как готовить вкусно, <br>просто и&nbsp;быстро",
             "subscribers": "220K подписчиков",
             "tags": [
               "Кулинария"
@@ -418,7 +418,7 @@
           {
             "name": "Крава накормит",
             "photoPath": "/img/channels-redesign/cooking-5.png",
-            "desc": "Авторские рецепты и&nbsp;полезные распаковки",
+            "desc": "Авторские рецепты <br>и&nbsp;полезные распаковки",
             "subscribers": "71K подписчиков",
             "tags": [
               "Кулинария"
@@ -427,7 +427,7 @@
           {
             "name": "Сам себе сушист",
             "photoPath": "/img/channels-redesign/cooking-6.png",
-            "desc": "Теперь суши и&nbsp;роллы дома сможет приготовить каждый",
+            "desc": "Теперь суши и&nbsp;роллы дома <br>сможет приготовить каждый",
             "subscribers": "1,4М подписчиков",
             "tags": [
               "Кулинария"
@@ -436,7 +436,7 @@
           {
             "name": "Мария Соболь | Рецепты",
             "photoPath": "/img/channels-redesign/cooking-7.png",
-            "desc": "Площадка для вкусных кулинарных экспериментов",
+            "desc": "Площадка для вкусных <br>кулинарных экспериментов",
             "subscribers": "97K подписчиков",
             "tags": [
               "Кулинария"
@@ -454,7 +454,7 @@
           {
             "name": "Александр Михайленко",
             "photoPath": "/img/channels-redesign/travel-2.png",
-            "desc": "Самое красивое с&nbsp;Крымского полуострова",
+            "desc": "Самое красивое с&nbsp;Крымского <br>полуострова",
             "subscribers": "308K подписчиков",
             "tags": [
               "Путешествия"
@@ -463,7 +463,7 @@
           {
             "name": "Путешествия без&nbsp;багажа",
             "photoPath": "/img/channels-redesign/travel-3.png",
-            "desc": "Были везде и&nbsp;расскажут об&nbsp;этом всё",
+            "desc": "Были везде и&nbsp;расскажут <br>об&nbsp;этом всё",
             "subscribers": "215K подписчиков",
             "tags": [
               "Путешествия"
@@ -481,7 +481,7 @@
           {
             "name": "В поисках света | Александр Мазуров",
             "photoPath": "/img/channels-redesign/travel-5.png",
-            "desc": "Фотограф-путешественник в&nbsp;поисках света",
+            "desc": "Фотограф-путешественник <br>в&nbsp;поисках света",
             "subscribers": "100K подписчиков",
             "tags": [
               "Путешествия"
@@ -499,7 +499,7 @@
           {
             "name": "Гражданин Мира",
             "photoPath": "/img/channels-redesign/travel-7.png",
-            "desc": "Авторский блог о&nbsp;бюджетных путешествиях",
+            "desc": "Авторский блог о&nbsp;бюджетных <br>путешествиях",
             "subscribers": "32K подписчиков",
             "tags": [
               "Путешествия"
@@ -508,7 +508,7 @@
           {
             "name": "Кирилл Мультитул",
             "photoPath": "/img/channels-redesign/travel-8.png",
-            "desc": "Показывает лайфхаки по&nbsp;навыкам выживания",
+            "desc": "Показывает лайфхаки <br>по&nbsp;навыкам выживания",
             "subscribers": "51K подписчиков",
             "tags": [
               "Путешествия"
@@ -517,7 +517,7 @@
           {
             "name": "Александр Снитовский",
             "photoPath": "/img/channels-redesign/travel-9.png",
-            "desc": "О Корее и&nbsp;Азии прямо из&nbsp;центра Сеула",
+            "desc": "О Корее и&nbsp;Азии прямо <br>из&nbsp;центра Сеула",
             "subscribers": "59K подписчиков",
             "tags": [
               "Путешествия"
@@ -526,7 +526,7 @@
           {
             "name": "Ленивая кругосветка",
             "photoPath": "/img/channels-redesign/travel-10.png",
-            "desc": "Нон-стоп по&nbsp;миру в&nbsp;погоне за&nbsp;вечным летом",
+            "desc": "Нон-стоп по&nbsp;миру в&nbsp;погоне <br>за&nbsp;вечным летом",
             "subscribers": "33K подписчиков",
             "tags": [
               "Путешествия"
