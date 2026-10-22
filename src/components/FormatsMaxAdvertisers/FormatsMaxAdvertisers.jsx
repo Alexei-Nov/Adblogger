@@ -17,9 +17,9 @@ export default function FormatsMaxAdvertisers({ block_state }) {
                   <div className="formats-max-advertisers-card__socials">
                     {card.socials.map((social, j) => {
                       return (
-                        <a href={social.link} target='_blank' className="formats-max-advertisers-card__social" key={i + '-' + j}>
+                        <div className="formats-max-advertisers-card__social" key={i + '-' + j}>
                           <img src={social.icon} alt="icon" />
-                        </a>
+                        </div>
                       )
                     })}
                   </div>
