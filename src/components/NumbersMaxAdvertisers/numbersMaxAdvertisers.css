@@ -1,8 +1,9 @@
+.numbers-max-advertisers {
+  padding-top: 0;
+}
 .numbers-max-advertisers__wrapper {
   display: flex;
-  flex-wrap: wrap;
-  gap: 125px;
-  row-gap: 60px;
+  gap: 16px;
   justify-content: center;
 }
 .numbers-max-advertisers__item {
@@ -11,29 +12,46 @@
   align-items: center;
   text-align: center;
   gap: 5px;
+  background: linear-gradient(94.12deg, #cdfbff 25.52%, #00eaff 108.56%);
+  color: #000;
+  padding: 25px;
+  border-radius: 18px;
+  width: 100%;
 }
 .numbers-max-advertisers__number {
   font-family: "VK Sans Display Expanded";
-  font-size: 90px;
-  line-height: 110%;
-  vertical-align: bottom;
+  font-size: 52px;
+  line-height: 120%;
   font-weight: 600;
-  background: linear-gradient(94.12deg, #cdfbff 25.52%, #00eaff 108.56%);
-  color: transparent;
-  -webkit-background-clip: text;
-          background-clip: text;
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 1024px) {
+  .numbers-max-advertisers {
+    padding-top: 90px;
+  }
   .numbers-max-advertisers__wrapper {
-    gap: 35px;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 570px) {
+  .numbers-max-advertisers {
+    padding-top: 40px;
+  }
+  .numbers-max-advertisers__item {
+    padding: 18px;
+  }
+  .numbers-max-advertisers__wrapper {
+    gap: 15px;
   }
   .numbers-max-advertisers__number {
-    font-size: 55px;
-    line-height: 110%;
+    font-size: 40px;
+    line-height: 120%;
   }
   .numbers-max-advertisers__text {
-    font-size: 22px !important;
+    font-size: 18px !important;
     line-height: 120%;
+    font-weight: 600;
   }
 }

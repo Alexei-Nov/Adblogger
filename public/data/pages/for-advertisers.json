@@ -15,6 +15,25 @@
       }
     },
     {
+      "block_slug": "numbers_max_advertisers",
+      "block_state": {
+        "list": [
+          {
+            "number": "135 000",
+            "text": "сообществ ВКонтакте"
+          },
+          {
+            "number": "10 000",
+            "text": "каналов в MAX"
+          },
+          {
+            "number": ">165 000",
+            "text": "активных размещений в месяц"
+          }
+        ]
+      }
+    },
+    {
       "block_slug": "formats_max_advertisers",
       "block_state": {
         "title": "2 формата рекламы, чтобы бизнес рос",
@@ -48,25 +67,6 @@
                 "link": "#link"
               }
             ]
-          }
-        ]
-      }
-    },
-    {
-      "block_slug": "numbers_max_advertisers",
-      "block_state": {
-        "list": [
-          {
-            "number": "100 000",
-            "text": "авторов в каталоге ВКонтакте"
-          },
-          {
-            "number": "10 000",
-            "text": "авторов в каталоге MAX"
-          },
-          {
-            "number": ">60 000",
-            "text": "активных размещений в месяц"
           }
         ]
       }

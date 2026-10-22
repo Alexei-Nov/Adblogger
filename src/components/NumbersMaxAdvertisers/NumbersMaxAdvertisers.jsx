@@ -10,7 +10,7 @@ export default function NumbersMaxAdvertisers({ block_state }) {
             return (
               <div className="numbers-max-advertisers__item" key={index}>
                 <div className="numbers-max-advertisers__number" dangerouslySetInnerHTML={{ __html: item.number }}></div>
-                <div className="numbers-max-advertisers__text text-30 fw-500" dangerouslySetInnerHTML={{ __html: item.text }}></div>
+                <div className="numbers-max-advertisers__text text-24 fw-600" dangerouslySetInnerHTML={{ __html: item.text }}></div>
               </div>
             )
           })}
