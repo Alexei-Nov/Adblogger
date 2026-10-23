@@ -227,14 +227,13 @@
 
 @media screen and (max-width: 768px) {
   .entrance-max-advertisers {
+    padding-top: 40px;
     &__media {
       zoom: 0.7;
       margin-top: 20px;
     }
     &__img {
-      width: 112%;
-      margin-left: -24px;
-      margin-right: -24px;
+      width: 100%;
       margin-bottom: -75px;
     }
     &__title {
