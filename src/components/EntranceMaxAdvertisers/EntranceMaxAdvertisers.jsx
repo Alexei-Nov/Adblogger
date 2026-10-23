@@ -47,9 +47,15 @@ export default function EntranceMaxAdvertisers({ block_state }) {
                 <img src="/img/entrance-max-advertisers/coin-3.png" alt="img" />
               </div>
             </div>
-            <div className="entrance-max-advertisers__img" >
-              <img src="/img/entrance-max-advertisers/img-1.png" alt="img" data-stage="1" />
-              <img src="/img/entrance-max-advertisers/img-2.png" alt="img" data-stage="2" />
+            <div className="entrance-max-advertisers__img">
+              <picture data-stage="1" >
+                <source media="(max-width: 768px)" srcset="/img/entrance-max-advertisers/img-1_mob.png" />
+                <img src="/img/entrance-max-advertisers/img-1.png" alt="img" />
+              </picture>
+              <picture data-stage="2" >
+                <source media="(max-width: 768px)" srcset="/img/entrance-max-advertisers/img-2_mob.png" />
+                <img src="/img/entrance-max-advertisers/img-2.png" alt="img" />
+              </picture>
             </div>
           </div>
         </div>
