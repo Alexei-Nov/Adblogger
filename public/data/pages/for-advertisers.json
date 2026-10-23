@@ -110,6 +110,7 @@
         ],
         "channels": [
           {
+            "platform": "ВК",
             "name": "Аня Абрамова",
             "photoPath": "/img/channels-redesign/lifestyle-9.png",
             "desc": "О семье, материнстве <br>и&nbsp;полезных покупках",
