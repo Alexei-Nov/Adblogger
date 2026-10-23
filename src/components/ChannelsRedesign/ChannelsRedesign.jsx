@@ -139,15 +139,22 @@ export default function ChannelsRedesign({ block_state }) {
                     <div className="channels-redesign__card">
                       <div className="channels-redesign__card-top">
                         <div className="channels-redesign__card-col">
-                          <div className="channels-redesign__subscribers">
-                            <div className="channels-redesign__subscribers-logo">
-                              <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 13.8705C0 7.33188 0 4.06257 2.03129 2.03129C4.06257 0 7.33188 0 13.8705 0H15.0264C21.565 0 24.8343 0 26.8656 2.03129C28.8968 4.06257 28.8968 7.33188 28.8968 13.8705V15.0264C28.8968 21.565 28.8968 24.8343 26.8656 26.8656C24.8343 28.8968 21.565 28.8968 15.0264 28.8968H13.8705C7.33188 28.8968 4.06257 28.8968 2.03129 26.8656C0 24.8343 0 21.565 0 15.0264V13.8705Z" fill="#0077FF" />
-                                <path d="M15.3755 20.8171C8.78942 20.8171 5.03287 16.302 4.87634 8.78882H8.17539C8.28375 14.3033 10.7159 16.6391 12.6423 17.1207V8.78882H15.7488V13.5447C17.6512 13.34 19.6497 11.1728 20.3239 8.78882H23.4304C22.9127 11.7267 20.7454 13.8939 19.2042 14.7849C20.7454 15.5073 23.2138 17.3977 24.153 20.8171H20.7334C19.9989 18.5295 18.1689 16.7595 15.7488 16.5187V20.8171H15.3755Z" fill="white" />
-                              </svg>
+                          {channel.platform == "ВК" &&
+                            <div className="channels-redesign__subscribers">
+                              <div className="channels-redesign__subscribers-logo">
+                                <img src="/img/channels-redesign/logo-vk.svg" alt="icon" />
+                              </div>
+                              <div className="channels-redesign__subscribers-text text-20" dangerouslySetInnerHTML={{ __html: channel.subscribers }}></div>
                             </div>
-                            <div className="channels-redesign__subscribers-text text-20" dangerouslySetInnerHTML={{ __html: channel.subscribers }}></div>
-                          </div>
+                          }
+                          {channel.platform == "МАКС" &&
+                            <div className="channels-redesign__subscribers ">
+                              <div className="channels-redesign__subscribers-logo">
+                                <img src="/img/channels-redesign/logo-max.svg" alt="icon" />
+                              </div>
+                              <div className="channels-redesign__subscribers-text channels-redesign__subscribers-text_max text-20" dangerouslySetInnerHTML={{ __html: channel.subscribers }}></div>
+                            </div>
+                          }
                           <div className="channels-redesign__name text-32 fw-500" dangerouslySetInnerHTML={{ __html: channel.name }}></div>
                         </div>
                         <div className="channels-redesign__img">
