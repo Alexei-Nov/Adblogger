@@ -328,7 +328,8 @@
   .channels-redesign__subscribers {
     gap: 6px;
   }
-  .channels-redesign__subscribers-logo svg {
+  .channels-redesign__subscribers-logo {
+    min-width: 14px;
     width: 14px;
     height: 14px;
   }

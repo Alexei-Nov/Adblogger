@@ -358,7 +358,8 @@
     &__subscribers {
       gap: 6px;
     }
-    &__subscribers-logo svg {
+    &__subscribers-logo {
+      min-width: 14px;
       width: 14px;
       height: 14px;
     }
